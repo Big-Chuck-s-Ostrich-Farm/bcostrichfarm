@@ -1,6 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Eye, Zap, Scale, Heart, Egg, Feather } from "lucide-react";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 
 const Facts = () => {
   const facts = [
@@ -33,6 +34,44 @@ const Facts = () => {
       icon: <Feather className="w-8 h-8 text-accent" />,
       title: "Unique Feathers",
       description: "Their feathers are loose and soft, unlike other birds, which helps them stay cool in hot climates."
+    }
+  ];
+
+  const nutritionData = [
+    {
+      nutrient: "Protein (g)",
+      Ostrich: 22,
+      Beef: 20,
+      Pork: 19,
+      Chicken: 23,
+    },
+    {
+      nutrient: "Fat (g)",
+      Ostrich: 2.8,
+      Beef: 15,
+      Pork: 14,
+      Chicken: 3.6,
+    },
+    {
+      nutrient: "Calories",
+      Ostrich: 142,
+      Beef: 250,
+      Pork: 242,
+      Chicken: 165,
+    },
+    {
+      nutrient: "Iron (mg)",
+      Ostrich: 3.2,
+      Beef: 2.6,
+      Pork: 0.9,
+      Chicken: 1.3,
+    },
+    {
+      nutrient: "Cholesterol (mg)",
+      Ostrich: 83,
+      Beef: 90,
+      Pork: 80,
+      Chicken: 85,
     }
   ];
 
@@ -74,6 +113,51 @@ const Facts = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Nutrition Comparison Chart */}
+        <div className="vintage-container mb-16">
+          <h2 className="vintage-subtitle text-center mb-8">Nutritional Comparison (per 100g)</h2>
+          <div className="h-96 w-full">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart
+                data={nutritionData}
+                margin={{
+                  top: 20,
+                  right: 30,
+                  left: 20,
+                  bottom: 5,
+                }}
+              >
+                <CartesianGrid strokeDasharray="3 3" className="opacity-30" />
+                <XAxis 
+                  dataKey="nutrient" 
+                  fontSize={12}
+                  className="text-muted-foreground"
+                />
+                <YAxis 
+                  fontSize={12}
+                  className="text-muted-foreground"
+                />
+                <Tooltip 
+                  contentStyle={{
+                    backgroundColor: "hsl(var(--card))",
+                    border: "1px solid hsl(var(--border))",
+                    borderRadius: "8px",
+                    color: "hsl(var(--foreground))"
+                  }}
+                />
+                <Legend />
+                <Bar dataKey="Ostrich" fill="hsl(var(--accent))" name="Ostrich" radius={[2, 2, 0, 0]} />
+                <Bar dataKey="Beef" fill="hsl(var(--primary) / 0.8)" name="Beef" radius={[2, 2, 0, 0]} />
+                <Bar dataKey="Pork" fill="hsl(var(--muted-foreground) / 0.6)" name="Pork" radius={[2, 2, 0, 0]} />
+                <Bar dataKey="Chicken" fill="hsl(var(--secondary) / 0.8)" name="Chicken" radius={[2, 2, 0, 0]} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+          <p className="text-center text-muted-foreground text-sm mt-4">
+            *Values are approximate and may vary based on preparation method and cut
+          </p>
         </div>
 
         {/* Additional Facts Section */}
