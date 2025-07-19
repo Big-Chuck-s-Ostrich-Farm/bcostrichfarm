@@ -71,6 +71,21 @@ const RecipeDetail = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Chef's Tips */}
+            <Card className="vintage-container bg-accent/5">
+              <CardHeader>
+                <CardTitle className="vintage-subtitle text-accent">Chef's Tips</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-2 text-muted-foreground">
+                  <p>• For best results, let ostrich meat come to room temperature before cooking</p>
+                  <p>• Don't overcook - ostrich is best served medium-rare to medium</p>
+                  <p>• Allow meat to rest for 5-10 minutes after cooking</p>
+                  <p>• Ostrich pairs beautifully with bold herbs and robust sauces</p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Recipe Details */}
@@ -121,21 +136,6 @@ const RecipeDetail = () => {
                     </li>
                   ))}
                 </ol>
-              </CardContent>
-            </Card>
-
-            {/* Chef's Tips */}
-            <Card className="vintage-container bg-accent/5">
-              <CardHeader>
-                <CardTitle className="vintage-subtitle text-accent">Chef's Tips</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-2 text-muted-foreground">
-                  <p>• For best results, let ostrich meat come to room temperature before cooking</p>
-                  <p>• Don't overcook - ostrich is best served medium-rare to medium</p>
-                  <p>• Allow meat to rest for 5-10 minutes after cooking</p>
-                  <p>• Ostrich pairs beautifully with bold herbs and robust sauces</p>
-                </div>
               </CardContent>
             </Card>
           </div>

@@ -95,22 +95,6 @@ const Products = () => {
             </Card>
           ))}
         </div>
-
-        <div className="mt-16 text-center">
-          <div className="vintage-container max-w-2xl mx-auto">
-            <h2 className="vintage-subtitle mb-4">Visit Our Farm Store</h2>
-            <p className="text-muted-foreground mb-6">
-              All our products are available for purchase at our on-site farm store. 
-              We're open Tuesday through Sunday, 9 AM to 5 PM. Come experience the 
-              freshness and quality of our ostrich products firsthand.
-            </p>
-            <div className="text-sm text-muted-foreground">
-              <p>📍 123 Farm Road, Countryside Valley</p>
-              <p>📞 (555) 123-FARM</p>
-              <p>🕘 Tue-Sun: 9 AM - 5 PM</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

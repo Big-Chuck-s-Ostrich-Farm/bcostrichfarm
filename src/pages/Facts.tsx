@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Eye, Zap, Scale, Heart, Egg, Feather } from "lucide-react";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 
 const Facts = () => {
   const facts = [
@@ -115,45 +115,32 @@ const Facts = () => {
           ))}
         </div>
 
-        {/* Nutrition Comparison Chart */}
+        {/* Nutrition Comparison Table */}
         <div className="vintage-container mb-16">
           <h2 className="vintage-subtitle text-center mb-8">Nutritional Comparison (per 100g)</h2>
-          <div className="h-96 w-full">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart
-                data={nutritionData}
-                margin={{
-                  top: 20,
-                  right: 30,
-                  left: 20,
-                  bottom: 5,
-                }}
-              >
-                <CartesianGrid strokeDasharray="3 3" className="opacity-30" />
-                <XAxis 
-                  dataKey="nutrient" 
-                  fontSize={12}
-                  className="text-muted-foreground"
-                />
-                <YAxis 
-                  fontSize={12}
-                  className="text-muted-foreground"
-                />
-                <Tooltip 
-                  contentStyle={{
-                    backgroundColor: "hsl(var(--card))",
-                    border: "1px solid hsl(var(--border))",
-                    borderRadius: "8px",
-                    color: "hsl(var(--foreground))"
-                  }}
-                />
-                <Legend />
-                <Bar dataKey="Ostrich" fill="hsl(var(--accent))" name="Ostrich" radius={[2, 2, 0, 0]} />
-                <Bar dataKey="Beef" fill="hsl(var(--primary) / 0.8)" name="Beef" radius={[2, 2, 0, 0]} />
-                <Bar dataKey="Pork" fill="hsl(var(--muted-foreground) / 0.6)" name="Pork" radius={[2, 2, 0, 0]} />
-                <Bar dataKey="Chicken" fill="hsl(var(--secondary) / 0.8)" name="Chicken" radius={[2, 2, 0, 0]} />
-              </BarChart>
-            </ResponsiveContainer>
+          <div className="overflow-x-auto">
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead className="font-semibold">Nutrient</TableHead>
+                  <TableHead className="text-center font-semibold text-accent">Ostrich</TableHead>
+                  <TableHead className="text-center font-semibold">Beef</TableHead>
+                  <TableHead className="text-center font-semibold">Pork</TableHead>
+                  <TableHead className="text-center font-semibold">Chicken</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {nutritionData.map((row) => (
+                  <TableRow key={row.nutrient}>
+                    <TableCell className="font-medium">{row.nutrient}</TableCell>
+                    <TableCell className="text-center font-bold text-accent bg-accent/10">{row.Ostrich}</TableCell>
+                    <TableCell className="text-center">{row.Beef}</TableCell>
+                    <TableCell className="text-center">{row.Pork}</TableCell>
+                    <TableCell className="text-center">{row.Chicken}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
           </div>
           <p className="text-center text-muted-foreground text-sm mt-4">
             *Values are approximate and may vary based on preparation method and cut
