@@ -18,7 +18,7 @@ const Recipes = () => {
         </div>
 
         {/* Cooking Tips at the top */}
-        <div className="vintage-container max-w-4xl mx-auto mb-12">
+        <div className="vintage-container max-w-6xl mx-auto mb-12">
           <h2 className="vintage-subtitle text-center mb-6">Essential Cooking Tips</h2>
           <div className="grid md:grid-cols-2 gap-6 text-muted-foreground">
             <div className="space-y-3">
@@ -42,7 +42,7 @@ const Recipes = () => {
               </p>
               <p className="flex items-start">
                 <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">5</span>
-                Always use a meat thermometer for best results
+                Always use a meat thermometer for best results (135&deg; to 165&deg; F)
               </p>
               <p className="flex items-start">
                 <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">6</span>

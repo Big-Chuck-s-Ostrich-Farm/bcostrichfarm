@@ -6,15 +6,15 @@ import { Button } from "@/components/ui/button";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <section className="relative h-[70vh] bg-[url('/placeholder.svg')] bg-cover bg-center" aria-label="Welcome hero section">
+      <section className="relative h-[70vh] bg-[url('/bcostrichfarm/PXL_20220513_003944036.jpg')] bg-cover bg-center" aria-label="Welcome hero section">
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
           <div className="max-w-2xl">
-            <h1 className="vintage-title text-white mb-6">
-              Welcome to Our Family Ostrich Farm
+            <h1 className="vintage-title text-white mb-6 drop-shadow-[0_4px_12px_rgba(0,0,0,0.85)] font-bold">
+              Welcome to Big Chuck's Ostrich Farm
             </h1>
-            <p className="text-lg text-white/90 mb-8">
-              Experience the finest quality ostrich products, raised with care in our traditional farm setting.
+            <p className="text-lg md:text-2xl text-white/90 mb-8">
+              Experience the finest quality ostrich products, raised with care and love.
             </p>
             <Button asChild className="bg-accent hover:bg-accent/90 focus:ring-2 focus:ring-accent focus:ring-offset-2">
               <Link to="/products" className="inline-flex items-center">
@@ -29,11 +29,9 @@ const Index = () => {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <section className="grid md:grid-cols-2 gap-8 mb-16" aria-label="Featured sections">
           <article className="vintage-container fade-in">
-            <h2 className="vintage-subtitle mb-4">Traditional Recipes</h2>
+            <h2 className="vintage-subtitle mb-4">Cuisine Recipes</h2>
             <p className="text-muted-foreground mb-4">
-              Discover delicious ways to prepare ostrich meat and eggs with our 
-              family recipes, passed down through generations. From grilled steaks 
-              to hearty stews, explore the unique flavors of ostrich cuisine.
+              Discover a world of unique flavors with ostrich meat in your cooking. Whether grilled, stir-fried, or marinated, elevate your dishes and impress your guests. Start your culinary adventure now!
             </p>
             <Button asChild variant="farm" size="lg" className="w-full sm:w-auto focus:ring-2 focus:ring-accent focus:ring-offset-2">
               <Link to="/recipes" className="inline-flex items-center text-base font-semibold">
@@ -66,22 +64,18 @@ const Index = () => {
               <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Heritage icon">
                 <span className="text-2xl">🦆</span>
               </div>
-              <h3 className="font-semibold text-primary mb-2">Our Heritage</h3>
+              <h3 className="font-semibold text-primary mb-2">Our Ranch</h3>
               <p className="text-muted-foreground text-sm">
-                Since 1985, our family has been dedicated to raising the finest ostriches 
-                in a sustainable and ethical manner. We take pride in our traditional farming 
-                methods while embracing modern practices for the best quality products.
+                Founded in 2020, our journey began with just two chicks on an ostrich farm. What started as a humble beginning has now grown into something we are truly proud of.
               </p>
             </article>
             <article className="text-center">
               <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Sustainability icon">
                 <span className="text-2xl">🌱</span>
               </div>
-              <h3 className="font-semibold text-primary mb-2">Sustainable Farming</h3>
+              <h3 className="font-semibold text-primary mb-2">The Journy.</h3>
               <p className="text-muted-foreground text-sm">
-                We believe in responsible farming that respects the environment and our animals. 
-                Our ostriches roam freely on natural pastures, and we use sustainable practices 
-                that protect the land for future generations.
+                With a passion for farming and a commitment to excellence, we strive to continuously improve and innovate in everything we do
               </p>
             </article>
             <article className="text-center">
@@ -90,9 +84,7 @@ const Index = () => {
               </div>
               <h3 className="font-semibold text-primary mb-2">Quality Products</h3>
               <p className="text-muted-foreground text-sm">
-                From premium ostrich meat to beautiful leather goods, we offer a wide range 
-                of products. All our products are raised with care and attention to detail, 
-                ensuring the highest quality for our customers.
+                Our mission is to deliver the finest ostrich meat and other related products to our customers, ensuring both quality and freshness.
               </p>
             </article>
           </div>

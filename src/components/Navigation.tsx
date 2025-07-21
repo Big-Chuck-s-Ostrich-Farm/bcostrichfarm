@@ -22,9 +22,10 @@ const Navigation = () => {
     <nav className="bg-background border-b border-primary/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center gap-2">
+            <img src="/bcostrichfarm/logo_sticker.png" alt="Big Chuck's Ostrich Farm Logo" className="h-12 w-12 object-contain" />
             <Link to="/" className="font-playfair font-bold text-2xl text-primary">
-              Ostrich Farm
+              Big Chuck's Ostrich Farm
             </Link>
           </div>
           
