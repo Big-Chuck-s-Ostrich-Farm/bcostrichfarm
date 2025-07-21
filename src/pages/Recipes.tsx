@@ -18,7 +18,7 @@ const Recipes = () => {
         </div>
 
         {/* Cooking Tips at the top */}
-        <div className="vintage-container max-w-6xl mx-auto mb-12">
+        <div className="vintage-container max-w-7xl mx-auto mb-12">
           <h2 className="vintage-subtitle text-center mb-6">Essential Cooking Tips</h2>
           <div className="grid md:grid-cols-2 gap-6 text-muted-foreground">
             <div className="space-y-3">

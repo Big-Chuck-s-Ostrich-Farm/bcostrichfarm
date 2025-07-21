@@ -61,29 +61,29 @@ const Index = () => {
           <h2 id="about-heading" className="vintage-subtitle text-center mb-8">About Our Farm</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <article className="text-center">
-              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Heritage icon">
-                <span className="text-2xl">🦆</span>
+              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Ostrich icon">
+                <img src="/bcostrichfarm/ostrich_icon.png" alt="Ostrich icon" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="font-semibold text-primary mb-2">Our Ranch</h3>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground text-base md:text-lg text-justify mb-8 px-4 md:px-8">
                 Founded in 2020, our journey began with just two chicks on an ostrich farm. What started as a humble beginning has now grown into something we are truly proud of.
               </p>
             </article>
             <article className="text-center">
-              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Sustainability icon">
-                <span className="text-2xl">🌱</span>
+              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Paw prints icon">
+                <span className="text-2xl">🐾</span>
               </div>
-              <h3 className="font-semibold text-primary mb-2">The Journy.</h3>
-              <p className="text-muted-foreground text-sm">
+              <h3 className="font-semibold text-primary mb-2">The Journey</h3>
+              <p className="text-muted-foreground text-base md:text-lg text-justify mb-8 px-4 md:px-8">
                 With a passion for farming and a commitment to excellence, we strive to continuously improve and innovate in everything we do
               </p>
             </article>
             <article className="text-center">
-              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Quality icon">
-                <span className="text-2xl">🏆</span>
+              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Meat icon">
+                <span className="text-2xl">🥩</span>
               </div>
               <h3 className="font-semibold text-primary mb-2">Quality Products</h3>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground text-base md:text-lg text-justify mb-8 px-4 md:px-8">
                 Our mission is to deliver the finest ostrich meat and other related products to our customers, ensuring both quality and freshness.
               </p>
             </article>
