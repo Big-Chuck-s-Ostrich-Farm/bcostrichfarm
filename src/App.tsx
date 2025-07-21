@@ -21,7 +21,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/bcostrichfarm">
+      <BrowserRouter>
         <div className="min-h-screen flex flex-col">
           <Navigation />
         <Routes>
