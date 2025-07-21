@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <section className="relative h-[70vh] bg-[url('/bcostrichfarm/PXL_20220513_003944036.jpg')] bg-cover bg-center" aria-label="Welcome hero section">
+      <section className="relative h-[70vh] bg-[url('/PXL_20220513_003944036.jpg')] bg-cover bg-center" aria-label="Welcome hero section">
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
           <div className="max-w-2xl">
@@ -62,7 +62,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <article className="text-center">
               <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Ostrich icon">
-                <img src="/bcostrichfarm/ostrich_icon.png" alt="Ostrich icon" className="w-10 h-10 object-contain" />
+                <img src="/ostrich_icon.png" alt="Ostrich icon" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="font-semibold text-primary mb-2">Our Ranch</h3>
               <p className="text-muted-foreground text-base md:text-lg text-justify mb-8 px-4 md:px-8">
