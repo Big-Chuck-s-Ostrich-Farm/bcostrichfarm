@@ -30,7 +30,6 @@ const Contact = () => {
                 <ul className="text-muted-foreground text-sm space-y-1 mb-2">
                   <li>• Frozen vacuum sealed ostrich meat</li>
                 </ul>
-                <p className="text-muted-foreground text-sm italic">We also provide educational content about ostrich farming and cooking at the market.</p>
               </div>
             </CardContent>
           </Card>
