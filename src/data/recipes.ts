@@ -27,7 +27,7 @@ export const recipes = [
     id: 2,
     name: "Ostrich Fajitas Tacos",
     description: "Juicy strips of ostrich steak sautéed with peppers and onions, served in warm tortillas with fresh toppings.",
-    image: "https://images.unsplash.com/photo-1627547263473-2e6e6c6b6b6e?auto=format&fit=crop&w=800&q=80", // Placeholder, will update below
+    image: "https://images.unsplash.com/photo-1627564803215-ad55bad5c5ea?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Taco
     prepTime: "20 min",
     cookTime: "15 min",
     servings: 4,
@@ -59,7 +59,7 @@ export const recipes = [
     id: 3,
     name: "Ostrich Meatballs",
     description: "Flavorful meatballs with Mediterranean herbs",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80", // Placeholder, will update below
+    image: "https://images.unsplash.com/photo-1529042410759-befb1204b468?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Meatball
     prepTime: "20 min",
     cookTime: "25 min",
     servings: 6,
@@ -87,7 +87,7 @@ export const recipes = [
     id: 4,
     name: "Ostrich Neck and Mushroom Stew",
     description: "Hearty stew with root vegetables and rich broth",
-    image: "https://images.unsplash.com/photo-1608496602044-0b7e0b7e0b7e?auto=format&fit=crop&w=800&q=80", // Placeholder, will update below
+    image: "https://images.unsplash.com/photo-1608500218987-0f2b3be34b47?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Stew
     prepTime: "30 min",
     cookTime: "2.5-3 hr",
     servings: 3,
