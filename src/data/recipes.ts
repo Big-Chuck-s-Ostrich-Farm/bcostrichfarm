@@ -33,7 +33,7 @@ export const recipes = [
     servings: 4,
     difficulty: "Easy",
     ingredients: [
-      "1 lb ostrich steak, thinly sliced",
+      "1 lb fajitas strips",
       "2 tbsp olive oil",
       "1 red bell pepper, sliced",
       "1 yellow bell pepper, sliced",
