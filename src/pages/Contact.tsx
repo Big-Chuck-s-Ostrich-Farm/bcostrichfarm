@@ -29,7 +29,7 @@ const Contact = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <h4 className="font-semibold text-primary mb-2 mt-4">What We Bring</h4>
+                <h4 className="font-semibold text-primary mb-2 ">What We Bring</h4>
                 <ul className="text-muted-foreground text-base space-y-1 mb-2">
                   <li>• Frozen vacuum sealed ostrich meat</li>
                 </ul>
