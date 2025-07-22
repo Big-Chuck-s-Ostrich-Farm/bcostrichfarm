@@ -44,61 +44,61 @@ const Gallery = () => {
     // User-uploaded images in public/
     {
       id: 101,
-      src: "/1 (1).jpg",
+      src: "/ostrich1.jpg",
       alt: "Ostrich photo 1",
       category: "Our Birds"
     },
     {
       id: 102,
-      src: "/1 (2).jpg",
+      src: "/ostrich2.jpg",
       alt: "Ostrich photo 2",
       category: "Our Birds"
     },
     {
       id: 103,
-      src: "/1 (3).jpg",
+      src: "/ostrich3.jpg",
       alt: "Ostrich photo 3",
       category: "Our Birds"
     },
     {
       id: 104,
-      src: "/1 (4).jpg",
+      src: "/ostrich4.jpg",
       alt: "Ostrich photo 4",
       category: "Our Birds"
     },
     {
       id: 105,
-      src: "/1 (5).jpg",
+      src: "/ostrich5.jpg",
       alt: "Ostrich photo 5",
       category: "Our Birds"
     },
     {
       id: 106,
-      src: "/1 (6).jpg",
+      src: "/ostrich6.jpg",
       alt: "Ostrich photo 6",
       category: "Our Birds"
     },
     {
       id: 107,
-      src: "/1 (7).jpg",
+      src: "/ostrich7.jpg",
       alt: "Ostrich photo 7",
       category: "Our Birds"
     },
     {
       id: 108,
-      src: "/1 (8).jpg",
+      src: "/ostrich8.jpg",
       alt: "Ostrich photo 8",
       category: "Our Birds"
     },
     {
       id: 109,
-      src: "/1 (9).jpg",
+      src: "/ostrich9.jpg",
       alt: "Ostrich photo 9",
       category: "Our Birds"
     },
     {
       id: 110,
-      src: "/1 (10).jpg",
+      src: "/ostrich10.jpg",
       alt: "Ostrich photo 10",
       category: "Our Birds"
     },
