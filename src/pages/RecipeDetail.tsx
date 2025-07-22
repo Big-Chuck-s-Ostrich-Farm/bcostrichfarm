@@ -32,7 +32,7 @@ const RecipeDetail = () => {
         </Button>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Recipe Image and Overview */}
+          {/* Left column: Image, Overview, Ingredients */}
           <div>
             <div className="aspect-video bg-muted rounded-lg overflow-hidden mb-6">
               <img 
@@ -41,7 +41,6 @@ const RecipeDetail = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            
             <Card className="vintage-container mb-8">
               <CardHeader>
                 <CardTitle className="vintage-subtitle">Recipe Overview</CardTitle>
@@ -71,8 +70,7 @@ const RecipeDetail = () => {
                 </div>
               </CardContent>
             </Card>
-
-            {/* Ingredients (moved here) */}
+            {/* Ingredients (left column) */}
             <Card className="vintage-container">
               <CardHeader>
                 <CardTitle className="vintage-subtitle flex items-center">
@@ -101,8 +99,13 @@ const RecipeDetail = () => {
                 </ul>
               </CardContent>
             </Card>
-
-            {/* Instructions */}
+          </div>
+          {/* Right column: Instructions */}
+          <div className="space-y-8">
+            <div>
+              <h1 className="vintage-title mb-4">{recipe.name}</h1>
+              <p className="text-lg text-muted-foreground">{recipe.description}</p>
+            </div>
             <Card className="vintage-container">
               <CardHeader>
                 <CardTitle className="vintage-subtitle flex items-center">
