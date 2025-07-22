@@ -21,7 +21,7 @@ const Contact = () => {
                 <MapPin className="w-6 h-6 mr-2 text-accent" />
                 Farmers Market
               </CardTitle>
-              <div className="mt-4 mb-2">
+              <div className="mt-8 mb-0">
                 <h4 className="font-semibold text-primary text-lg">Japan Town Farmers' Market</h4>
                 <p className="text-muted-foreground text-base font-semibold">Every Sunday, 9:00 AM - 12:00 PM</p>
                 <p className="text-muted-foreground text-sm">357 E Taylor St, San Jose, CA 95112</p>
