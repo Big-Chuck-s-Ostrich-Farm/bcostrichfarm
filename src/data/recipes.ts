@@ -25,28 +25,34 @@ export const recipes = [
   },
   {
     id: 2,
-    name: "Ostrich Egg Omelet",
-    description: "A giant omelet perfect for feeding the whole family",
-    image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23?w=500&h=400&fit=crop",
-    prepTime: "10 min",
+    name: "Ostrich Fajitas Tacos",
+    description: "Juicy strips of ostrich steak sautéed with peppers and onions, served in warm tortillas with fresh toppings.",
+    image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=80", // Fajitas/tacos Unsplash
+    prepTime: "20 min",
     cookTime: "15 min",
-    servings: 8,
-    difficulty: "Medium",
+    servings: 4,
+    difficulty: "Easy",
     ingredients: [
-      "1 ostrich egg (equivalent to 24 chicken eggs)",
-      "2 tbsp butter",
-      "1 cup mixed vegetables (bell peppers, onions, mushrooms)",
-      "1 cup cheese, shredded",
+      "1 lb ostrich steak, thinly sliced",
+      "2 tbsp olive oil",
+      "1 red bell pepper, sliced",
+      "1 yellow bell pepper, sliced",
+      "1 large onion, sliced",
+      "2 cloves garlic, minced",
+      "1 tsp chili powder",
+      "1/2 tsp cumin",
+      "1/2 tsp smoked paprika",
       "Salt and pepper to taste",
-      "Fresh herbs for garnish"
+      "8 small flour or corn tortillas",
+      "Toppings: salsa, avocado, cilantro, lime wedges"
     ],
     instructions: [
-      "Carefully crack the ostrich egg into a large bowl",
-      "Whisk thoroughly until well combined",
-      "Sauté vegetables in butter until tender",
-      "Pour egg mixture into a large pan over medium heat",
-      "Add vegetables and cheese when eggs start to set",
-      "Fold omelet in half and serve immediately"
+      "In a large bowl, toss ostrich steak strips with chili powder, cumin, paprika, salt, and pepper.",
+      "Heat 1 tbsp olive oil in a large skillet over medium-high heat. Add ostrich strips and cook for 2-3 minutes until just browned. Remove and set aside.",
+      "Add remaining olive oil to the skillet. Sauté peppers and onions for 4-5 minutes until softened. Add garlic and cook 1 minute more.",
+      "Return ostrich to the pan and toss with vegetables for 1-2 minutes to heat through.",
+      "Warm tortillas in a dry skillet or microwave.",
+      "Fill each tortilla with ostrich fajita mixture. Top with salsa, avocado, cilantro, and a squeeze of lime. Serve immediately."
     ]
   },
   {
