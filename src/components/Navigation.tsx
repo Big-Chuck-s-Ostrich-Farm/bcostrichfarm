@@ -1,11 +1,40 @@
 
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Moon } from "lucide-react";
+import React from "react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const [isDark, setIsDark] = useState(() =>
+    typeof window !== 'undefined' ? document.documentElement.classList.contains('dark') : false
+  );
+
+  const toggleDarkMode = () => {
+    const html = document.documentElement;
+    if (html.classList.contains('dark')) {
+      html.classList.remove('dark');
+      setIsDark(false);
+      localStorage.setItem('theme', 'light');
+    } else {
+      html.classList.add('dark');
+      setIsDark(true);
+      localStorage.setItem('theme', 'dark');
+    }
+  };
+
+  // On mount, respect saved theme
+  React.useEffect(() => {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark') {
+      document.documentElement.classList.add('dark');
+      setIsDark(true);
+    } else if (saved === 'light') {
+      document.documentElement.classList.remove('dark');
+      setIsDark(false);
+    }
+  }, []);
 
   const links = [
     { href: "/", label: "Home" },
@@ -28,6 +57,14 @@ const Navigation = () => {
               Big Chuck's Ostrich Farm
             </Link>
           </div>
+          {/* Dark mode toggle button */}
+          <button
+            onClick={toggleDarkMode}
+            className="ml-auto mr-4 p-2 rounded-full border border-primary/30 bg-background hover:bg-primary/10 transition-colors text-primary flex items-center justify-center"
+            aria-label="Toggle dark mode"
+          >
+            <Moon className={isDark ? "fill-primary text-background" : "text-primary"} size={24} />
+          </button>
           
           {/* Mobile menu button */}
           <div className="md:hidden">
