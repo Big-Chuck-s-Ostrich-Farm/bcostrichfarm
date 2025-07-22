@@ -58,7 +58,7 @@ const Navigation = () => {
             </Link>
           </div>
           {/* Desktop menu */}
-          <div className="hidden md:flex md:items-center md:space-x-8 flex-1 justify-center">
+          <div className="hidden md:flex md:items-center md:space-x-8 ml-auto">
             {links.map((link) => (
               <Link
                 key={link.href}
