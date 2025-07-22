@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Phone, Mail, Clock, Youtube, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Youtube, Instagram, MessageSquareHeart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -21,12 +21,14 @@ const Contact = () => {
                 <MapPin className="w-6 h-6 mr-2 text-accent" />
                 Farmers Market
               </CardTitle>
-              <h4 className="font-semibold text-primary text-lg mt-2">Japan Town Farmers' Market</h4>
+              <div className="mt-2 mb-2">
+                <h4 className="font-semibold text-primary text-lg">Japan Town Farmers' Market</h4>
+                <p className="text-muted-foreground text-base font-semibold">Every Sunday, 9:00 AM - 12:00 PM</p>
+                <p className="text-muted-foreground text-sm">357 E Taylor St, San Jose, CA 95112</p>
+              </div>
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <p className="text-muted-foreground text-base font-semibold mb-1">Every Sunday, 9:00 AM - 12:00 PM</p>
-                <p className="text-muted-foreground text-sm mb-2">357 E Taylor St, San Jose, CA 95112</p>
                 <h4 className="font-semibold text-primary mb-2 mt-6">What We Bring</h4>
                 <ul className="text-muted-foreground text-sm space-y-1 mb-2">
                   <li>• Frozen vacuum sealed ostrich meat</li>
@@ -57,7 +59,7 @@ const Contact = () => {
           {/* Social Media */}
           <Card className="vintage-container">
             <CardHeader>
-              <CardTitle className="vintage-subtitle">Follow Us</CardTitle>
+              <CardTitle className="vintage-subtitle flex items-center"><MessageSquareHeart className="w-6 h-6 mr-2 text-accent" />Follow Us</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div>
