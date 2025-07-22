@@ -38,11 +38,11 @@ const Recipes = () => {
             <div className="space-y-3">
               <p className="flex items-start">
                 <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">4</span>
-                Ostrich meat pairs wonderfully with bold flavors and herbs
+                Enhance ostrich meat with bold flavors and herbs for a delicious dish or keep it simple with just salt and pepper for a classic taste.
               </p>
               <p className="flex items-start">
                 <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">5</span>
-                Always use a meat thermometer for best results (135&deg; to 165&deg; F)
+                Always use a meat thermometer for best results (135&deg; F for medium rare; 165&deg; F for well done)
               </p>
               <p className="flex items-start">
                 <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">6</span>
