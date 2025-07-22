@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Eye, Zap, Scale, Heart, Egg, Feather } from "lucide-react";
+import { Eye, Zap, Ruler, Heart, Egg, Feather } from "lucide-react";
 
 const Facts = () => {
   const facts = [
@@ -16,7 +16,7 @@ const Facts = () => {
       description: "They can run up to 45 mph (72 km/h) and maintain speeds of 30 mph for long distances."
     },
     {
-      icon: <Scale className="w-8 h-8 text-accent" />,
+      icon: <Ruler className="w-8 h-8 text-accent" />,
       title: "Impressive Size",
       description: "Adult ostriches can weigh up to 350 pounds and stand 9 feet tall, making them the world's largest bird."
     },
