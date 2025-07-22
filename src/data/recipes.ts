@@ -3,7 +3,7 @@ export const recipes = [
     id: 1,
     name: "Grilled Ostrich Steaks",
     description: "Tender, juicy ostrich steaks with herbs and garlic",
-    image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=500&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
     prepTime: "15 min",
     cookTime: "20 min",
     servings: 4,
