@@ -26,6 +26,14 @@ const Recipes = () => {
                 <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">1</span>
                 One ostrich egg equals about 24 chicken eggs
               </p>
+              <p className="flex items-start">
+                <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">2</span>
+                Ostrich meat is very lean, so cook quickly over high heat for best results
+              </p>
+              <p className="flex items-start">
+                <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">3</span>
+                Don&apos;t overcook - ostrich is best served medium-rare to medium
+              </p>
             </div>
             <div className="space-y-3">
               <p className="flex items-start">
@@ -33,8 +41,16 @@ const Recipes = () => {
                 Always use a meat thermometer for best results (135&deg; F for medium rare; 165&deg; F for well done)
               </p>
               <p className="flex items-start">
+                <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">5</span>
+                Let the meat rest for 5-10 minutes after cooking
+              </p>
+              <p className="flex items-start">
                 <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">6</span>
                 Marinate for enhanced flavor and tenderness
+              </p>
+              <p className="flex items-start">
+                <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">7</span>
+                Ostrich pairs beautifully with bold herbs and robust sauces
               </p>
             </div>
           </div>
