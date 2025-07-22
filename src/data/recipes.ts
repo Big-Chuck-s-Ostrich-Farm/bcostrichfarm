@@ -235,26 +235,29 @@ export const recipes = [
   },
   {
     id: 9,
-    name: "Ostrich Tenderloin Medallions",
-    description: "Juicy ostrich tenderloin medallions pan-seared and finished with a red wine reduction.",
+    name: "Roasted Ostrich Tenderloin",
+    description: "Whole ostrich tenderloin (1 to 1.5 lb) roasted to perfection with garlic, herbs, and olive oil.",
     image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80", // Placeholder
     prepTime: "15 min",
-    cookTime: "12 min",
-    servings: 2,
+    cookTime: "30 min",
+    servings: 4,
     difficulty: "Medium",
     ingredients: [
-      "2 ostrich tenderloin steaks (about 6 oz each)",
-      "Salt and pepper to taste",
-      "1 tbsp olive oil",
-      "2 tbsp butter",
-      "1/2 cup red wine",
-      "1 tsp fresh rosemary, chopped"
+      "1 to 1.5 lb whole ostrich tenderloin",
+      "2 tbsp olive oil",
+      "3 cloves garlic, minced",
+      "1 tbsp fresh rosemary, chopped",
+      "1 tbsp fresh thyme, chopped",
+      "1 tsp salt",
+      "1/2 tsp black pepper",
+      "1 tbsp Dijon mustard (optional)"
     ],
     instructions: [
-      "Season tenderloin steaks with salt and pepper.",
-      "Heat olive oil in a skillet over medium-high heat. Sear steaks 2-3 minutes per side for medium-rare. Remove and rest.",
-      "Add butter, rosemary, and red wine to the pan. Simmer until reduced by half.",
-      "Serve steaks with pan sauce drizzled over the top."
+      "Preheat oven to 425°F (220°C). Pat tenderloin dry with paper towels.",
+      "In a small bowl, mix olive oil, garlic, rosemary, thyme, salt, pepper, and Dijon mustard (if using). Rub mixture all over the tenderloin.",
+      "Place tenderloin on a rack in a roasting pan. Roast for 20-25 minutes for medium-rare, or until internal temperature reaches 130-135°F (54-57°C).",
+      "Remove from oven, tent with foil, and let rest 10 minutes before slicing.",
+      "Slice and serve with pan juices or your favorite sauce."
     ]
   },
   {
