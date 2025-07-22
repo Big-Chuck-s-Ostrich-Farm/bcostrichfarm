@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Eye, Zap, Ruler, Heart, Egg, Feather } from "lucide-react";
+import { Eye, Zap, Ruler, Heart, Egg, Feather, Beef } from "lucide-react";
 
 const Facts = () => {
   const facts = [
@@ -21,7 +21,7 @@ const Facts = () => {
       description: "Adult ostriches can weigh up to 350 pounds and stand 9 feet tall, making them the world's largest bird."
     },
     {
-      icon: <Heart className="w-8 h-8 text-accent" />,
+      icon: <Beef className="w-8 h-8 text-accent" />,
       title: "Healthy Meat",
       description: "Ostrich meat is 97% fat-free, high in protein, iron, and looks very much like lean beef."
     },
