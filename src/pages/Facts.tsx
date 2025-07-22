@@ -101,8 +101,8 @@ const Facts = () => {
         {/* Nutrition Comparison Table - moved to top */}
         <div className="vintage-container mb-16">
           <h2 className="vintage-subtitle text-center mb-8">Nutritional Comparison (per 100g)</h2>
-          <div className="overflow-x-auto flex justify-center">
-            <div className="w-full max-w-4xl">
+          <div className="overflow-x-auto">
+            <div className="min-w-[600px] max-w-4xl mx-auto">
               <Table className="w-full table-fixed">
                 <colgroup>
                   <col className="w-1/5" />
