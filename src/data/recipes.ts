@@ -123,5 +123,33 @@ export const recipes = [
       "Add 1 tbsp of butter to a sauté pan and gently sauté mushrooms. Remove the mushrooms, melt the last 1tbsp of butter and then add the flour to make a roux (thickener). Add the saved stock, sugar, soy sauce, and Worcestershire's sauce. Blend until smooth and then add back the mushrooms. Simmer 10 minutes to thicken the stock, check seasoning level and adjust to taste.",
       "Place necks on a plate and pour your mushroom sauce over the top. Enjoy!"
     ]
+  },
+  {
+    id: 5,
+    name: "Ostrich Burger",
+    description: "Juicy ostrich burger patties grilled to perfection and served with your favorite toppings.",
+    image: "https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&auto=format&fit=crop", // Unsplash burger image
+    prepTime: "15 min",
+    cookTime: "10 min",
+    servings: 4,
+    difficulty: "Easy",
+    ingredients: [
+      "1 lb ground ostrich meat",
+      "1/4 cup breadcrumbs",
+      "1 egg",
+      "1 small onion, finely chopped",
+      "1 clove garlic, minced",
+      "1 tsp Worcestershire sauce",
+      "Salt and pepper to taste",
+      "4 burger buns",
+      "Toppings: lettuce, tomato, onion, cheese, pickles, condiments"
+    ],
+    instructions: [
+      "In a bowl, combine ground ostrich, breadcrumbs, egg, onion, garlic, Worcestershire sauce, salt, and pepper. Mix until just combined.",
+      "Form mixture into 4 equal patties.",
+      "Preheat grill or skillet to medium-high heat. Cook patties for 4-5 minutes per side, or until cooked through.",
+      "Toast burger buns if desired.",
+      "Assemble burgers with your favorite toppings and serve immediately."
+    ]
   }
 ];
