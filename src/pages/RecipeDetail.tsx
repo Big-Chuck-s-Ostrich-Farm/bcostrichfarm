@@ -110,7 +110,7 @@ const RecipeDetail = () => {
                       return <li key={index} className="h-4" aria-hidden="true" />;
                     }
                     if (ingredient === "Sauce:") {
-                      return <li key={index} className="font-semibold text-accent text-lg pt-2 pb-1">Sauce:</li>;
+                      return <li key={index} className="font-bold text-accent text-xl pt-2 pb-1">Sauce:</li>;
                     }
                     return (
                       <li key={index} className="flex items-start">
