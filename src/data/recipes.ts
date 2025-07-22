@@ -53,7 +53,7 @@ export const recipes = [
     id: 3,
     name: "Ostrich Meatballs",
     description: "Flavorful meatballs with Mediterranean herbs",
-    image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a?w=500&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80", // Meatball Unsplash
     prepTime: "20 min",
     cookTime: "25 min",
     servings: 6,
@@ -81,7 +81,7 @@ export const recipes = [
     id: 4,
     name: "Ostrich Neck and Mushroom Stew",
     description: "Hearty stew with root vegetables and rich broth",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80", // Updated to direct Unsplash meatball image
+    image: "https://images.unsplash.com/photo-1695216000000-fSV3SArHjs8?auto=format&fit=crop&w=800&q=80", // Stew Unsplash
     prepTime: "30 min",
     cookTime: "2.5-3 hr",
     servings: 3,
