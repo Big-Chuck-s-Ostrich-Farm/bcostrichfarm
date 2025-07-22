@@ -23,7 +23,7 @@ const Facts = () => {
     {
       icon: <Heart className="w-8 h-8 text-accent" />,
       title: "Healthy Meat",
-      description: "Ostrich meat is 97% fat-free, high in protein, iron, and tastes similar to lean beef."
+      description: "Ostrich meat is 97% fat-free, high in protein, iron, and looks very much like lean beef."
     },
     {
       icon: <Egg className="w-8 h-8 text-accent" />,

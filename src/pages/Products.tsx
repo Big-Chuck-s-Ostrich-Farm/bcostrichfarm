@@ -7,7 +7,7 @@ const Products = () => {
       id: 1,
       name: "Ground Ostrich",
       description: "Lean, flavorful ground ostrich meat—perfect for burgers, meatballs, tacos, and more.",
-      category: "Meat",
+      category: "Ground",
       features: ["High protein", "Low fat", "Versatile"],
       image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
     },
@@ -15,7 +15,7 @@ const Products = () => {
       id: 2,
       name: "Fajitas Strips",
       description: "Tender strips of ostrich, ideal for stir-fries, fajitas, and quick sautés.",
-      category: "Meat",
+      category: "Strips",
       features: ["Quick-cooking", "Tender", "Great for marinades"],
       image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=80"
     },
@@ -31,7 +31,7 @@ const Products = () => {
       id: 4,
       name: "Outside Strip",
       description: "Fan-shaped, boneless, extremely tender and lean—great for grilling or pan-frying.",
-      category: "Steak",
+      category: "Strips",
       features: ["Lean", "Sliced for grilling", "Tender"],
       image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80"
     },
@@ -39,7 +39,7 @@ const Products = () => {
       id: 5,
       name: "Inside Strip",
       description: "A tender, mild-flavored cut—perfect for quick pan-searing or stir-frying.",
-      category: "Steak",
+      category: "Medallion",
       features: ["Tender", "Mild flavor", "Quick-cooking"],
       image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80"
     },
@@ -55,7 +55,7 @@ const Products = () => {
       id: 7,
       name: "Tenderloin",
       description: "The most tender ostrich cut—roast whole or slice into medallions for a gourmet meal.",
-      category: "Steak",
+      category: "Whole Cut",
       features: ["Extremely tender", "Gourmet", "Roast or medallions"],
       image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80"
     },
@@ -63,7 +63,7 @@ const Products = () => {
       id: 8,
       name: "Fan Fillet",
       description: "Most prized, tender, and lean cut—ideal for marinating, grilling, or searing.",
-      category: "Fillet",
+      category: "Whole Cut",
       features: ["Lean", "Quick sear", "Great for salads"],
       image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=80"
     },
