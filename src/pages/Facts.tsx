@@ -21,7 +21,7 @@ const Facts = () => {
       description: "Adult ostriches can weigh up to 350 pounds and stand 9 feet tall, making them the world's largest bird."
     },
     {
-      icon: <span className="text-3xl" role="img" aria-label="Meat">🥩</span>,
+      icon: <Heart className="w-8 h-8 text-accent" />,
       title: "Healthy Meat",
       description: "Ostrich meat is 97% fat-free, high in protein, iron, and looks very much like lean beef."
     },
