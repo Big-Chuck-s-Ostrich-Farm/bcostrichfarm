@@ -40,7 +40,68 @@ const Gallery = () => {
       src: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800&h=600&fit=crop",
       alt: "Sunset over the farm",
       category: "Scenery"
-    }
+    },
+    // User-uploaded images in public/
+    {
+      id: 101,
+      src: "/1 (1).jpg",
+      alt: "Ostrich photo 1",
+      category: "Our Birds"
+    },
+    {
+      id: 102,
+      src: "/1 (2).jpg",
+      alt: "Ostrich photo 2",
+      category: "Our Birds"
+    },
+    {
+      id: 103,
+      src: "/1 (3).jpg",
+      alt: "Ostrich photo 3",
+      category: "Our Birds"
+    },
+    {
+      id: 104,
+      src: "/1 (4).jpg",
+      alt: "Ostrich photo 4",
+      category: "Our Birds"
+    },
+    {
+      id: 105,
+      src: "/1 (5).jpg",
+      alt: "Ostrich photo 5",
+      category: "Our Birds"
+    },
+    {
+      id: 106,
+      src: "/1 (6).jpg",
+      alt: "Ostrich photo 6",
+      category: "Our Birds"
+    },
+    {
+      id: 107,
+      src: "/1 (7).jpg",
+      alt: "Ostrich photo 7",
+      category: "Our Birds"
+    },
+    {
+      id: 108,
+      src: "/1 (8).jpg",
+      alt: "Ostrich photo 8",
+      category: "Our Birds"
+    },
+    {
+      id: 109,
+      src: "/1 (9).jpg",
+      alt: "Ostrich photo 9",
+      category: "Our Birds"
+    },
+    {
+      id: 110,
+      src: "/1 (10).jpg",
+      alt: "Ostrich photo 10",
+      category: "Our Birds"
+    },
   ];
 
   const categories = ["All", "Farm Life", "Our Birds", "Scenery"];
