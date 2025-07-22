@@ -105,14 +105,22 @@ const RecipeDetail = () => {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
-                  {recipe.ingredients.map((ingredient, index) => (
-                    <li key={index} className="flex items-start">
-                      <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">
-                        {index + 1}
-                      </span>
-                      <span className="text-muted-foreground">{ingredient}</span>
-                    </li>
-                  ))}
+                  {recipe.ingredients.map((ingredient, index) => {
+                    if (ingredient === "") {
+                      return <li key={index} className="h-4" aria-hidden="true" />;
+                    }
+                    if (ingredient === "Sauce:") {
+                      return <li key={index} className="font-semibold text-accent text-lg pt-2 pb-1">Sauce:</li>;
+                    }
+                    return (
+                      <li key={index} className="flex items-start">
+                        <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">
+                          {index + 1}
+                        </span>
+                        <span className="text-muted-foreground">{ingredient}</span>
+                      </li>
+                    );
+                  })}
                 </ul>
               </CardContent>
             </Card>
