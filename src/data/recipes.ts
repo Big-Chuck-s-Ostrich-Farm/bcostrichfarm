@@ -81,7 +81,7 @@ export const recipes = [
     id: 4,
     name: "Ostrich Neck and Mushroom Stew",
     description: "Hearty stew with root vegetables and rich broth",
-    image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=500&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1695216000000-fSV3SArHjs8?auto=format&fit=crop&w=800&q=80",
     prepTime: "30 min",
     cookTime: "2.5-3 hr",
     servings: 3,
