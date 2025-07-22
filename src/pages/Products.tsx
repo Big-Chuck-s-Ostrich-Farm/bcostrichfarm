@@ -5,51 +5,99 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: "Premium Ostrich Meat",
-      description: "Lean, healthy red meat with exceptional flavor. High in protein and low in fat.",
+      name: "Ground Ostrich",
+      description: "Lean, flavorful ground ostrich meat—perfect for burgers, meatballs, tacos, and more.",
       category: "Meat",
-      features: ["Grass-fed", "Hormone-free", "Locally raised"],
-      image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a?w=500&h=400&fit=crop"
+      features: ["High protein", "Low fat", "Versatile"],
+      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 2,
-      name: "Ostrich Leather Goods",
-      description: "Luxurious leather products made from our own ostriches. Durable and beautiful.",
-      category: "Leather",
-      features: ["Handcrafted", "Unique texture", "Long-lasting"],
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=500&h=400&fit=crop"
+      name: "Fajitas Strips",
+      description: "Tender strips of ostrich, ideal for stir-fries, fajitas, and quick sautés.",
+      category: "Meat",
+      features: ["Quick-cooking", "Tender", "Great for marinades"],
+      image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 3,
-      name: "Fresh Ostrich Eggs",
-      description: "Giant eggs perfect for cooking and decoration. One egg feeds a family!",
-      category: "Eggs",
-      features: ["Farm fresh", "Nutrient-rich", "Unique size"],
-      image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23?w=500&h=400&fit=crop"
+      name: "Oyster Steak",
+      description: "A juicy, flavorful cut—great for grilling or pan-searing to medium-rare.",
+      category: "Steak",
+      features: ["Rich flavor", "Best grilled", "Medium-rare recommended"],
+      image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 4,
-      name: "Ostrich Feathers",
-      description: "Beautiful plumes for decoration, crafts, and fashion accessories.",
-      category: "Feathers",
-      features: ["Natural colors", "Premium quality", "Various sizes"],
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=500&h=400&fit=crop"
+      name: "Outside Strip",
+      description: "Lean, steak-like cut from the outer thigh—excellent for slicing and grilling.",
+      category: "Steak",
+      features: ["Lean", "Sliced for grilling", "Tender"],
+      image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 5,
-      name: "Ostrich Oil",
-      description: "Pure ostrich oil with moisturizing and healing properties for skin care.",
-      category: "Cosmetics",
-      features: ["100% natural", "Hypoallergenic", "Anti-inflammatory"],
-      image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=500&h=400&fit=crop"
+      name: "Inside Strip",
+      description: "A tender, mild-flavored cut—perfect for quick pan-searing or stir-frying.",
+      category: "Steak",
+      features: ["Tender", "Mild flavor", "Quick-cooking"],
+      image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 6,
-      name: "Jerky & Dried Meat",
-      description: "Delicious ostrich jerky made with traditional methods and natural spices.",
-      category: "Processed",
-      features: ["No preservatives", "High protein", "Long shelf life"],
-      image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a?w=500&h=400&fit=crop"
+      name: "Top Loin",
+      description: "Premium, steakhouse-quality cut—best cooked rare to medium for maximum juiciness.",
+      category: "Steak",
+      features: ["Premium cut", "Juicy", "Best rare to medium"],
+      image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      id: 7,
+      name: "Tenderloin",
+      description: "The most tender ostrich cut—roast whole or slice into medallions for a gourmet meal.",
+      category: "Steak",
+      features: ["Extremely tender", "Gourmet", "Roast or medallions"],
+      image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      id: 8,
+      name: "Fan Fillet",
+      description: "Lean, flavorful fillet from the thigh—great for quick searing or slicing for salads.",
+      category: "Fillet",
+      features: ["Lean", "Quick sear", "Great for salads"],
+      image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      id: 9,
+      name: "Wings",
+      description: "Meaty ostrich wings—delicious baked, grilled, or tossed in your favorite sauce.",
+      category: "Specialty",
+      features: ["Meaty", "Great for sauces", "Baked or grilled"],
+      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      id: 10,
+      name: "Liver",
+      description: "Rich, iron-packed ostrich liver—excellent sautéed with onions or in pâté.",
+      category: "Offal",
+      features: ["Rich flavor", "High in iron", "Great for pâté"],
+      image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      id: 11,
+      name: "Heart",
+      description: "Unique, lean muscle—marinate and grill for a delicacy full of flavor.",
+      category: "Offal",
+      features: ["Lean", "Unique texture", "Best grilled"],
+      image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      id: 12,
+      name: "Neck",
+      description: "Flavorful, collagen-rich cut—ideal for slow-cooked stews and hearty broths.",
+      category: "Specialty",
+      features: ["Collagen-rich", "Great for stews", "Slow-cooked"],
+      image: "https://images.unsplash.com/photo-1608500218987-0f2b3be34b47?q=80&w=687&auto=format&fit=crop"
     }
   ];
 
