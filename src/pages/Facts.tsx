@@ -39,39 +39,39 @@ const Facts = () => {
 
   const nutritionData = [
     {
+      nutrient: "Calories",
+      Ostrich: 97,
+      Beef: 217,
+      Pork: 291,
+      Chicken: 219,
+    },
+    {
       nutrient: "Protein (g)",
       Ostrich: 22,
-      Beef: 20,
-      Pork: 19,
-      Chicken: 23,
+      Beef: 19,
+      Pork: 16,
+      Chicken: 18,
     },
     {
       nutrient: "Fat (g)",
-      Ostrich: 2.8,
+      Ostrich: 1.2,
       Beef: 15,
-      Pork: 14,
-      Chicken: 3.6,
-    },
-    {
-      nutrient: "Calories",
-      Ostrich: 142,
-      Beef: 250,
-      Pork: 242,
-      Chicken: 165,
+      Pork: 23,
+      Chicken: 15,
     },
     {
       nutrient: "Iron (mg)",
       Ostrich: 3.2,
       Beef: 2.6,
-      Pork: 0.9,
-      Chicken: 1.3,
+      Pork: 1.0,
+      Chicken: 1.2,
     },
     {
       nutrient: "Cholesterol (mg)",
-      Ostrich: 83,
-      Beef: 90,
-      Pork: 80,
-      Chicken: 85,
+      Ostrich: 58,
+      Beef: 86,
+      Pork: 86,
+      Chicken: 89,
     }
   ];
 
