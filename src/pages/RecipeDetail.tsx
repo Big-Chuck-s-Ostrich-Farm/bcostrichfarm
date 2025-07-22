@@ -80,9 +80,6 @@ const RecipeDetail = () => {
               <CardContent>
                 <div className="space-y-2 text-muted-foreground">
                   <p>• For best results, let ostrich meat come to room temperature before cooking</p>
-                  <p>• Don't overcook - ostrich is best served medium-rare to medium</p>
-                  <p>• Allow meat to rest for 5-10 minutes after cooking</p>
-                  <p>• Ostrich pairs beautifully with bold herbs and robust sauces</p>
                 </div>
               </CardContent>
             </Card>
@@ -113,12 +110,12 @@ const RecipeDetail = () => {
                       return <li key={index} className="font-bold text-accent text-xl pt-2 pb-1">Sauce:</li>;
                     }
                     return (
-                      <li key={index} className="flex items-start">
-                        <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">
-                          {index + 1}
-                        </span>
-                        <span className="text-muted-foreground">{ingredient}</span>
-                      </li>
+                    <li key={index} className="flex items-start">
+                      <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">
+                        {index + 1}
+                      </span>
+                      <span className="text-muted-foreground">{ingredient}</span>
+                    </li>
                     );
                   })}
                 </ul>
