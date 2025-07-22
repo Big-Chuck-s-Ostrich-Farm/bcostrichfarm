@@ -28,7 +28,7 @@ const Recipes = () => {
               </p>
               <p className="flex items-start">
                 <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">2</span>
-                Ostrich meat is very lean, so cook quickly over high heat for best results
+                Enhance the flavor of ostrich meat with bold herbs and spices, or simply season with salt and pepper
               </p>
               <p className="flex items-start">
                 <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">3</span>
