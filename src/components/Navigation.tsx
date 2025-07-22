@@ -50,34 +50,15 @@ const Navigation = () => {
   return (
     <nav className="bg-background border-b border-primary/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 w-full">
           <div className="flex-shrink-0 flex items-center gap-2">
             <img src="/logo_sticker.png" alt="Big Chuck's Ostrich Farm Logo" className="h-12 w-12 object-contain" />
             <Link to="/" className="font-playfair font-bold text-2xl text-primary">
               Big Chuck's Ostrich Farm
             </Link>
           </div>
-          {/* Dark mode toggle button */}
-          <button
-            onClick={toggleDarkMode}
-            className="ml-auto mr-4 p-2 rounded-full border border-primary/30 bg-background hover:bg-primary/10 transition-colors text-primary flex items-center justify-center"
-            aria-label="Toggle dark mode"
-          >
-            <Moon className={isDark ? "fill-primary text-background" : "text-primary"} size={24} />
-          </button>
-          
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-primary hover:text-primary/80"
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-          
           {/* Desktop menu */}
-          <div className="hidden md:flex md:items-center md:space-x-8">
+          <div className="hidden md:flex md:items-center md:space-x-8 flex-1 justify-center">
             {links.map((link) => (
               <Link
                 key={link.href}
@@ -88,6 +69,23 @@ const Navigation = () => {
                 {link.label}
               </Link>
             ))}
+          </div>
+          {/* Dark mode toggle button */}
+          <button
+            onClick={toggleDarkMode}
+            className="ml-4 p-2 rounded-full border border-primary/30 bg-background hover:bg-primary/10 transition-colors text-primary flex items-center justify-center"
+            aria-label="Toggle dark mode"
+          >
+            <Moon className={isDark ? "fill-primary text-background" : "text-primary"} size={24} />
+          </button>
+          {/* Mobile menu button */}
+          <div className="md:hidden ml-2">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-primary hover:text-primary/80"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
         </div>
       </div>
