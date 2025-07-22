@@ -41,35 +41,6 @@ const RecipeDetail = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <Card className="vintage-container mb-8">
-              <CardHeader>
-                <CardTitle className="vintage-subtitle">Recipe Overview</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-2 gap-4 text-center">
-                  <div className="flex flex-col items-center p-4 bg-muted/50 rounded-lg">
-                    <Timer className="w-6 h-6 text-accent mb-2" />
-                    <span className="text-sm text-muted-foreground">Prep Time</span>
-                    <span className="font-semibold">{recipe.prepTime}</span>
-                  </div>
-                  <div className="flex flex-col items-center p-4 bg-muted/50 rounded-lg">
-                    <Clock className="w-6 h-6 text-accent mb-2" />
-                    <span className="text-sm text-muted-foreground">Cook Time</span>
-                    <span className="font-semibold">{recipe.cookTime}</span>
-                  </div>
-                  <div className="flex flex-col items-center p-4 bg-muted/50 rounded-lg">
-                    <Users className="w-6 h-6 text-accent mb-2" />
-                    <span className="text-sm text-muted-foreground">Servings</span>
-                    <span className="font-semibold">{recipe.servings}</span>
-                  </div>
-                  <div className="flex flex-col items-center p-4 bg-muted/50 rounded-lg">
-                    <ChefHat className="w-6 h-6 text-accent mb-2" />
-                    <span className="text-sm text-muted-foreground">Difficulty</span>
-                    <span className="font-semibold">{recipe.difficulty}</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
             {/* Ingredients (left column) */}
             <Card className="vintage-container">
               <CardHeader>
@@ -100,12 +71,41 @@ const RecipeDetail = () => {
               </CardContent>
             </Card>
           </div>
-          {/* Right column: Instructions */}
+          {/* Right column: Overview and Instructions */}
           <div className="space-y-8">
             <div>
               <h1 className="vintage-title mb-4">{recipe.name}</h1>
               <p className="text-lg text-muted-foreground">{recipe.description}</p>
             </div>
+            <Card className="vintage-container mb-8">
+              <CardHeader>
+                <CardTitle className="vintage-subtitle">Recipe Overview</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-2 gap-4 text-center">
+                  <div className="flex flex-col items-center p-4 bg-muted/50 rounded-lg">
+                    <Timer className="w-6 h-6 text-accent mb-2" />
+                    <span className="text-sm text-muted-foreground">Prep Time</span>
+                    <span className="font-semibold">{recipe.prepTime}</span>
+                  </div>
+                  <div className="flex flex-col items-center p-4 bg-muted/50 rounded-lg">
+                    <Clock className="w-6 h-6 text-accent mb-2" />
+                    <span className="text-sm text-muted-foreground">Cook Time</span>
+                    <span className="font-semibold">{recipe.cookTime}</span>
+                  </div>
+                  <div className="flex flex-col items-center p-4 bg-muted/50 rounded-lg">
+                    <Users className="w-6 h-6 text-accent mb-2" />
+                    <span className="text-sm text-muted-foreground">Servings</span>
+                    <span className="font-semibold">{recipe.servings}</span>
+                  </div>
+                  <div className="flex flex-col items-center p-4 bg-muted/50 rounded-lg">
+                    <ChefHat className="w-6 h-6 text-accent mb-2" />
+                    <span className="text-sm text-muted-foreground">Difficulty</span>
+                    <span className="font-semibold">{recipe.difficulty}</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
             <Card className="vintage-container">
               <CardHeader>
                 <CardTitle className="vintage-subtitle flex items-center">
