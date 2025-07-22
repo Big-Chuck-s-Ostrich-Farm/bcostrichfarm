@@ -9,20 +9,18 @@ export const recipes = [
     servings: 4,
     difficulty: "Easy",
     ingredients: [
-      "4 ostrich steaks (6 oz each)",
-      "2 tbsp olive oil",
+      "2 oyster steak (6-8 oz)",
+      "2 tbsp butter",
       "3 cloves garlic, minced",
       "2 tbsp fresh rosemary",
-      "Salt and pepper to taste",
-      "1 lemon, juiced"
+      "Salt and pepper to taste"
     ],
     instructions: [
       "Let steaks come to room temperature for 30 minutes",
-      "Mix olive oil, garlic, rosemary, salt, and pepper",
-      "Rub mixture onto steaks and let marinate for 15 minutes",
       "Preheat grill to medium-high heat",
-      "Grill steaks for 3-4 minutes per side for medium-rare",
-      "Let rest for 5 minutes before serving with lemon juice"
+      "Grill steaks for 3-4 minutes per side for medium-rare, adding in butter, garlic and rosemary during the last few minutes",
+      "Turn off heat and spoon butter over the steaks a few times",
+      "Enjoy!"
     ]
   },
   {
