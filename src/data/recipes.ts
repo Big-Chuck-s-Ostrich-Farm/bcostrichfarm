@@ -151,5 +151,36 @@ export const recipes = [
       "Toast burger buns if desired.",
       "Assemble burgers with your favorite toppings and serve immediately."
     ]
+  },
+  {
+    id: 6,
+    name: "Spicy Ostrich Wings",
+    description: "Tender ostrich wings tossed in a spicy, tangy sauce and baked to perfection.",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop", // Unsplash wings image (placeholder)
+    prepTime: "15 min",
+    cookTime: "45 min",
+    servings: 4,
+    difficulty: "Medium",
+    ingredients: [
+      "2 lbs ostrich wings",
+      "2 tbsp olive oil",
+      "1 tsp salt",
+      "1/2 tsp black pepper",
+      "1 tsp smoked paprika",
+      "1/2 tsp garlic powder",
+      "1/2 tsp onion powder",
+      "1/2 cup hot sauce (like Frank's RedHot)",
+      "2 tbsp melted butter",
+      "1 tbsp honey",
+      "Chopped parsley for garnish (optional)"
+    ],
+    instructions: [
+      "Preheat oven to 400°F (200°C). Line a baking sheet with foil and place a wire rack on top.",
+      "Pat ostrich wings dry with paper towels. Toss with olive oil, salt, pepper, paprika, garlic powder, and onion powder.",
+      "Arrange wings in a single layer on the rack. Bake for 35-40 minutes, turning halfway, until crispy and cooked through.",
+      "Meanwhile, in a bowl, whisk together hot sauce, melted butter, and honey.",
+      "Remove wings from oven and toss immediately in the sauce until well coated.",
+      "Garnish with chopped parsley and serve hot."
+    ]
   }
 ];
