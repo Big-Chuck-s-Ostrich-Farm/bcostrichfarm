@@ -98,24 +98,7 @@ const Facts = () => {
           </p>
         </div>
 
-        {/* Main Facts Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {facts.map((fact, index) => (
-            <Card key={index} className="vintage-container hover:shadow-lg transition-shadow text-center">
-              <CardHeader>
-                <div className="flex justify-center mb-4">
-                  {fact.icon}
-                </div>
-                <CardTitle className="vintage-subtitle text-xl">{fact.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{fact.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        {/* Nutrition Comparison Table */}
+        {/* Nutrition Comparison Table - moved to top */}
         <div className="vintage-container mb-16">
           <h2 className="vintage-subtitle text-center mb-8">Nutritional Comparison (per 100g)</h2>
           <div className="overflow-x-auto flex justify-center">
@@ -154,6 +137,23 @@ const Facts = () => {
           <p className="text-center text-muted-foreground text-sm mt-4">
             *Values are approximate and may vary based on preparation method and cut
           </p>
+        </div>
+
+        {/* Main Facts Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {facts.map((fact, index) => (
+            <Card key={index} className="vintage-container hover:shadow-lg transition-shadow text-center">
+              <CardHeader>
+                <div className="flex justify-center mb-4">
+                  {fact.icon}
+                </div>
+                <CardTitle className="vintage-subtitle text-xl">{fact.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">{fact.description}</p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
 
         {/* Additional Facts Section */}
