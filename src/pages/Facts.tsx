@@ -164,29 +164,17 @@ const Facts = () => {
 
         {/* Conservation Section */}
         <div className="mt-16">
-          <div className="vintage-container max-w-4xl mx-auto text-center">
+          <div className="vintage-container text-center">
             <h2 className="vintage-subtitle mb-6">Conservation & Farming</h2>
-            <div className="grid md:grid-cols-2 gap-8 text-left">
-              <div>
-                <h3 className="font-semibold text-primary mb-3">Why Farm Ostriches?</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Sustainable meat production</li>
-                  <li>• Efficient land use</li>
-                  <li>• Multiple valuable products</li>
-                  <li>• Environmentally friendly</li>
-                  <li>• Drought resistant</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-primary mb-3">Our Commitment</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Ethical treatment of animals</li>
-                  <li>• Sustainable farming practices</li>
-                  <li>• Supporting local ecosystem</li>
-                  <li>• Educational outreach</li>
-                  <li>• Quality assurance</li>
-                </ul>
-              </div>
+            <div className="text-left max-w-xl mx-auto">
+              <h3 className="font-semibold text-primary mb-3">Why Farm Ostriches?</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Sustainable meat production</li>
+                <li>• Efficient land use</li>
+                <li>• Multiple valuable products</li>
+                <li>• Environmentally friendly</li>
+                <li>• Drought resistant</li>
+              </ul>
             </div>
           </div>
         </div>

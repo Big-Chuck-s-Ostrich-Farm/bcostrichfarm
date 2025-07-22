@@ -95,7 +95,7 @@ const Contact = () => {
                   <Button 
                     asChild 
                     variant="outline" 
-                    className="w-full justify-start hover:bg-red-50 hover:border-red-200"
+                    className="w-full justify-start hover:bg-red-50 hover:border-red-200 hover:text-black"
                   >
                     <a 
                       href="https://youtube.com/@ostrichfarm" 
@@ -110,7 +110,7 @@ const Contact = () => {
                   <Button 
                     asChild 
                     variant="outline" 
-                    className="w-full justify-start hover:bg-purple-50 hover:border-purple-200"
+                    className="w-full justify-start hover:bg-purple-50 hover:border-purple-200 hover:text-black"
                   >
                     <a 
                       href="https://instagram.com/ostrichfarm" 
