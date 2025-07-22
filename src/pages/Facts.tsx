@@ -174,16 +174,38 @@ const Facts = () => {
         {/* Conservation Section */}
         <div className="mt-16">
           <div className="vintage-container text-center">
-            <h2 className="vintage-subtitle mb-6">Conservation & Farming</h2>
-            <div className="text-left max-w-xl mx-auto">
-              <h3 className="font-semibold text-primary mb-3">Why Farm Ostriches?</h3>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>• Sustainable meat production</li>
-                <li>• Efficient land use</li>
-                <li>• Multiple valuable products</li>
-                <li>• Environmentally friendly</li>
-                <li>• Drought resistant</li>
-              </ul>
+            <h2 className="vintage-subtitle mb-6">Why Farm Ostriches?</h2>
+            <div className="max-w-3xl mx-auto">
+              <div className="grid sm:grid-cols-2 gap-6 mt-8">
+                <div className="flex items-start gap-4">
+                  <span className="bg-accent/20 text-accent rounded-full w-10 h-10 flex items-center justify-center text-2xl">🌱</span>
+                  <div className="text-left">
+                    <span className="font-semibold text-primary">Sustainable meat production</span>
+                    <p className="text-muted-foreground text-sm">Ostriches require less land and water than traditional livestock.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="bg-accent/20 text-accent rounded-full w-10 h-10 flex items-center justify-center text-2xl">🌎</span>
+                  <div className="text-left">
+                    <span className="font-semibold text-primary">Efficient land use</span>
+                    <p className="text-muted-foreground text-sm">More protein per acre compared to cattle or pigs.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="bg-accent/20 text-accent rounded-full w-10 h-10 flex items-center justify-center text-2xl">🦩</span>
+                  <div className="text-left">
+                    <span className="font-semibold text-primary">Multiple valuable products</span>
+                    <p className="text-muted-foreground text-sm">Meat, eggs, leather, feathers, and oil.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="bg-accent/20 text-accent rounded-full w-10 h-10 flex items-center justify-center text-2xl">🌤️</span>
+                  <div className="text-left">
+                    <span className="font-semibold text-primary">Environmentally friendly</span>
+                    <p className="text-muted-foreground text-sm">Lower carbon footprint and drought resistance.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
