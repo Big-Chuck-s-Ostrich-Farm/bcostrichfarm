@@ -19,32 +19,18 @@ const Contact = () => {
             <CardHeader>
               <CardTitle className="vintage-subtitle flex items-center">
                 <MapPin className="w-6 h-6 mr-2 text-accent" />
-                Farmers Markets
+                Japan Town Farmers' Market
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <h4 className="font-semibold text-primary mb-2">Downtown Market</h4>
-                <p className="text-muted-foreground text-sm">
-                  Every Saturday, 8:00 AM - 2:00 PM<br />
-                  Main Street Plaza, Downtown
-                </p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-primary mb-2">Riverside Market</h4>
-                <p className="text-muted-foreground text-sm">
-                  Sundays, 9:00 AM - 3:00 PM<br />
-                  Riverside Park, East Side
-                </p>
-              </div>
-              <div>
+                <p className="text-muted-foreground text-base font-semibold mb-1">Every Sunday, 9:00 AM - 12:00 PM</p>
+                <p className="text-muted-foreground text-sm mb-2">357 E Taylor St, San Jose, CA 95112</p>
                 <h4 className="font-semibold text-primary mb-2">What We Bring</h4>
-                <ul className="text-muted-foreground text-sm space-y-1">
-                  <li>• Fresh ostrich meat</li>
-                  <li>• Ostrich eggs</li>
-                  <li>• Leather products</li>
-                  <li>• Farm-fresh produce</li>
+                <ul className="text-muted-foreground text-sm space-y-1 mb-2">
+                  <li>• Frozen vacuum sealed ostrich meat</li>
                 </ul>
+                <p className="text-muted-foreground text-sm italic">We also provide educational content about ostrich farming and cooking at the market.</p>
               </div>
             </CardContent>
           </Card>
@@ -53,32 +39,17 @@ const Contact = () => {
           <Card className="vintage-container">
             <CardHeader>
               <CardTitle className="vintage-subtitle flex items-center">
-                <Phone className="w-6 h-6 mr-2 text-accent" />
+                <Mail className="w-6 h-6 mr-2 text-accent" />
                 Get In Touch
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <h4 className="font-semibold text-primary mb-2">Phone</h4>
-                <p className="text-muted-foreground">(555) 123-FARM (3276)</p>
-              </div>
-              <div>
                 <h4 className="font-semibold text-primary mb-2">Email</h4>
-                <p className="text-muted-foreground">info@ostrichfarm.com</p>
+                <p className="text-muted-foreground">bigchucksostrichfarm@gmail.com</p>
               </div>
               <div>
-                <h4 className="font-semibold text-primary mb-2">Farm Address</h4>
-                <p className="text-muted-foreground text-sm">
-                  123 Ostrich Farm Road<br />
-                  Countryside Valley, CV 12345
-                </p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-primary mb-2">Best Times to Call</h4>
-                <p className="text-muted-foreground text-sm">
-                  Tuesday - Sunday: 9:00 AM - 6:00 PM<br />
-                  Closed Mondays
-                </p>
+                <p className="text-muted-foreground text-base">Contact us any time and we will get back to you as soon as possible.</p>
               </div>
             </CardContent>
           </Card>
@@ -86,7 +57,7 @@ const Contact = () => {
           {/* Social Media */}
           <Card className="vintage-container">
             <CardHeader>
-              <CardTitle className="vintage-subtitle">Follow Our Journey</CardTitle>
+              <CardTitle className="vintage-subtitle">Follow Us</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div>
@@ -98,7 +69,7 @@ const Contact = () => {
                     className="w-full justify-start hover:bg-red-50 hover:border-red-200 hover:text-black"
                   >
                     <a 
-                      href="https://youtube.com/@ostrichfarm" 
+                      href="https://www.youtube.com/@bigchucksostrichfarm" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       aria-label="Visit our YouTube channel"
@@ -113,26 +84,16 @@ const Contact = () => {
                     className="w-full justify-start hover:bg-purple-50 hover:border-purple-200 hover:text-black"
                   >
                     <a 
-                      href="https://instagram.com/ostrichfarm" 
+                      href="https://www.instagram.com/bigchucksostrichfarm/" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       aria-label="Follow us on Instagram"
                     >
                       <Instagram className="mr-2 h-4 w-4 text-purple-600" />
-                      @ostrichfarm
+                      @bigchucksostrichfarm
                     </a>
                   </Button>
                 </div>
-              </div>
-              <div>
-                <h4 className="font-semibold text-primary mb-2">What You'll See</h4>
-                <ul className="text-muted-foreground text-sm space-y-1">
-                  <li>• Daily farm life</li>
-                  <li>• Cooking tutorials</li>
-                  <li>• Behind-the-scenes</li>
-                  <li>• Educational content</li>
-                  <li>• Product updates</li>
-                </ul>
               </div>
             </CardContent>
           </Card>
