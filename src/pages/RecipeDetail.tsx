@@ -41,6 +41,7 @@ const RecipeDetail = () => {
                 className="w-full h-full object-cover"
               />
             </div>
+            <div className="pt-8"></div>
             {/* Ingredients (left column) */}
             <Card className="vintage-container">
               <CardHeader>
