@@ -34,11 +34,12 @@ const RecipeDetail = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left column: Image, Overview, Ingredients */}
           <div>
-            <div className="aspect-video bg-muted rounded-lg overflow-hidden mb-6">
+            <div className="aspect-video relative rounded-lg overflow-hidden mb-6" style={{ background: 'hsl(var(--secondary))' }}>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/10 z-10" />
               <img 
                 src={recipe.image} 
                 alt={recipe.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover absolute inset-0 z-20"
               />
             </div>
             <div className="pt-8"></div>
