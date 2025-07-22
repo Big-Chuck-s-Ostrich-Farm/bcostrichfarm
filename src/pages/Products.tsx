@@ -107,8 +107,7 @@ const Products = () => {
         <div className="text-center mb-12">
           <h1 className="vintage-title mb-4">Our Premium Products</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover our range of high-quality ostrich products, all raised with care on our family farm. 
-            Visit our farm store to experience these unique offerings.
+            Discover our range of high-quality ostrich products, all raised with care on our family farm.
           </p>
         </div>
 
