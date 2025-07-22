@@ -119,7 +119,7 @@ const Products = () => {
           </p>
           {/* Tag filter buttons */}
           <div className="flex justify-center mt-6 mb-8">
-            <div className="flex space-x-2 bg-card p-2 rounded-lg border border-primary/20">
+            <div className="flex space-x-2 bg-card p-2 rounded-lg border border-primary/20 overflow-x-auto">
               <button
                 className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${!selectedTag ? 'bg-primary text-primary-foreground' : 'hover:bg-muted text-muted-foreground'}`}
                 onClick={() => setSelectedTag(null)}
@@ -139,7 +139,7 @@ const Products = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProducts.map((product) => (
             <Card key={product.id} className="vintage-container hover:shadow-lg transition-shadow">
               <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">

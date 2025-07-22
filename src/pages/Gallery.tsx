@@ -124,7 +124,7 @@ const Gallery = () => {
 
         {/* Category Filter */}
         <div className="flex justify-center mb-8">
-          <div className="flex space-x-2 bg-card p-2 rounded-lg border border-primary/20">
+          <div className="flex space-x-2 bg-card p-2 rounded-lg border border-primary/20 overflow-x-auto">
             {categories.map((category) => (
               <button
                 key={category}
@@ -142,7 +142,7 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredImages.map((image) => (
             <div 
               key={image.id} 
@@ -174,7 +174,7 @@ const Gallery = () => {
               <img 
                 src={selectedImage} 
                 alt="Full size" 
-                className="max-w-full max-h-full object-contain rounded-lg"
+                className="max-w-full max-h-[80vh] object-contain rounded-lg"
               />
             </div>
           </div>
