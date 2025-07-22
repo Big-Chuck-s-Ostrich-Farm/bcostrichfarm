@@ -30,7 +30,7 @@ const Products = () => {
     {
       id: 4,
       name: "Outside Strip",
-      description: "The ostrich outside strip is a fan-shaped, boneless cut that is extremely tender and very lean. This premium steak is easy to cook—perfect for grilling or quick pan-frying. Its tenderness and mild flavor make it a favorite for steak lovers seeking a healthy, gourmet option.",
+      description: "Fan-shaped, boneless, extremely tender and lean—great for grilling or pan-frying.",
       category: "Steak",
       features: ["Lean", "Sliced for grilling", "Tender"],
       image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80"
@@ -62,7 +62,7 @@ const Products = () => {
     {
       id: 8,
       name: "Fan Fillet",
-      description: "The ostrich fan fillet is the most prized primal muscle cut—exceptionally tender, lean, and rich in flavor. Perfect for marinating, grilling, or searing, this premium cut absorbs flavors beautifully and delivers a luxurious, juicy bite. Packaged whole to preserve its purity and versatility.",
+      description: "Most prized, tender, and lean cut—ideal for marinating, grilling, or searing.",
       category: "Fillet",
       features: ["Lean", "Quick sear", "Great for salads"],
       image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=80"
