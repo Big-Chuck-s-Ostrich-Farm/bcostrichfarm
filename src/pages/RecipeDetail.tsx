@@ -72,27 +72,7 @@ const RecipeDetail = () => {
               </CardContent>
             </Card>
 
-            {/* Chef's Tips */}
-            <Card className="vintage-container bg-accent/5">
-              <CardHeader>
-                <CardTitle className="vintage-subtitle text-accent">Chef's Tips</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-2 text-muted-foreground">
-                  <p>• For best results, let ostrich meat come to room temperature before cooking</p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Recipe Details */}
-          <div className="space-y-8">
-            <div>
-              <h1 className="vintage-title mb-4">{recipe.name}</h1>
-              <p className="text-lg text-muted-foreground">{recipe.description}</p>
-            </div>
-
-            {/* Ingredients */}
+            {/* Ingredients (moved here) */}
             <Card className="vintage-container">
               <CardHeader>
                 <CardTitle className="vintage-subtitle flex items-center">
