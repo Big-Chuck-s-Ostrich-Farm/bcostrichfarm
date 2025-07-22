@@ -30,7 +30,7 @@ const Products = () => {
     {
       id: 4,
       name: "Outside Strip",
-      description: "Lean, steak-like cut from the outer thigh—excellent for slicing and grilling.",
+      description: "The ostrich outside strip is a fan-shaped, boneless cut that is extremely tender and very lean. This premium steak is easy to cook—perfect for grilling or quick pan-frying. Its tenderness and mild flavor make it a favorite for steak lovers seeking a healthy, gourmet option.",
       category: "Steak",
       features: ["Lean", "Sliced for grilling", "Tender"],
       image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80"
