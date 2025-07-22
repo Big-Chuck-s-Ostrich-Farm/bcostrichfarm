@@ -110,12 +110,12 @@ export const recipes = [
       "1/2 tsp Worcestershire Sauce"
     ],
     instructions: [
-      "Brown meat in a large pot with oil",
-      "Add vegetables and cook for 5 minutes",
-      "Add broth, tomato paste, and seasonings",
-      "Bring to a boil, then reduce heat to low",
-      "Simmer covered for 2-3 hours until meat is tender",
-      "Remove bay leaves before serving"
+      "Start by pouring the olive oil into a Dutch oven and heat on medium-high on the stove. Place necks in heated oil and sear to a nice golden brown, rotating to cook on all sides. Add the garlic, onions, and tomatoes.",
+      "Add the wine and simmer for a few minutes while scraping all the bits off the bottom. Add the broth, lemongrass, tomatoes, bay leaves, salt, and pepper.",
+      "Cover and place in the oven at 300F for 2½ - 3 hours. Add mushrooms 1/2 hour before done.",
+      "Remove from the oven and carefully. Remove 1 cups of the stock and strain using a fine-mesh strainer or cheesecloth.",
+      "Add 1 tbsp of butter to a sauté pan and gently sauté mushrooms. Remove the mushrooms, melt the last 1tbsp of butter and then add the flour to make a roux (thickener). Add the saved stock, sugar, soy sauce, and Worcestershire's sauce. Blend until smooth and then add back the mushrooms. Simmer 10 minutes to thicken the stock, check seasoning level and adjust to taste.",
+      "Place necks on a plate and pour your mushroom sauce over the top. Enjoy!"
     ]
   }
 ];
