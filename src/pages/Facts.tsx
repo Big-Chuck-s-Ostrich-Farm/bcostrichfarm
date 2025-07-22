@@ -121,22 +121,22 @@ const Facts = () => {
           <div className="overflow-x-auto">
             <Table>
               <TableHeader>
-                <TableRow>
-                  <TableHead className="font-semibold">Nutrient</TableHead>
-                  <TableHead className="text-center font-semibold text-accent">Ostrich</TableHead>
-                  <TableHead className="text-center font-semibold">Beef</TableHead>
-                  <TableHead className="text-center font-semibold">Pork</TableHead>
-                  <TableHead className="text-center font-semibold">Chicken</TableHead>
+                <TableRow className="text-lg">
+                  <TableHead className="font-semibold text-lg">Nutrient</TableHead>
+                  <TableHead className="text-center font-semibold text-accent text-lg">Ostrich</TableHead>
+                  <TableHead className="text-center font-semibold text-lg">Beef</TableHead>
+                  <TableHead className="text-center font-semibold text-lg">Pork</TableHead>
+                  <TableHead className="text-center font-semibold text-lg">Chicken</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {nutritionData.map((row) => (
-                  <TableRow key={row.nutrient}>
-                    <TableCell className="font-medium">{row.nutrient}</TableCell>
-                    <TableCell className="text-center font-bold text-accent bg-accent/10">{row.Ostrich}</TableCell>
-                    <TableCell className="text-center">{row.Beef}</TableCell>
-                    <TableCell className="text-center">{row.Pork}</TableCell>
-                    <TableCell className="text-center">{row.Chicken}</TableCell>
+                  <TableRow key={row.nutrient} className="text-lg">
+                    <TableCell className="font-medium text-lg">{row.nutrient}</TableCell>
+                    <TableCell className="text-center font-bold text-accent bg-accent/10 text-lg">{row.Ostrich}</TableCell>
+                    <TableCell className="text-center text-lg">{row.Beef}</TableCell>
+                    <TableCell className="text-center text-lg">{row.Pork}</TableCell>
+                    <TableCell className="text-center text-lg">{row.Chicken}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
