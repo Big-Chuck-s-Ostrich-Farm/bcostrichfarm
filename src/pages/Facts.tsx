@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Eye, Zap, Ruler, Heart, Egg, Feather, Ham } from "lucide-react";
+import { Eye, Zap, Ruler, Heart, Egg, Feather, Ham, Leaf, Globe, Sun } from "lucide-react";
 
 const Facts = () => {
   const facts = [
@@ -178,31 +178,31 @@ const Facts = () => {
             <div className="max-w-3xl mx-auto">
               <div className="grid sm:grid-cols-2 gap-6 mt-8">
                 <div className="flex items-start gap-4">
-                  <span className="bg-accent/20 text-accent rounded-full w-10 h-10 flex items-center justify-center text-2xl">🌱</span>
+                  <span className="bg-accent/20 text-accent rounded-full w-12 h-12 flex items-center justify-center"><Leaf className="w-7 h-7" /></span>
                   <div className="text-left">
-                    <span className="font-semibold text-primary">Sustainable meat production</span>
-                    <p className="text-muted-foreground text-sm">Ostriches require less land and water than traditional livestock.</p>
+                    <span className="font-semibold text-primary text-lg md:text-xl">Sustainable meat production</span>
+                    <p className="text-muted-foreground text-base md:text-lg">Ostriches require less land and water than traditional livestock.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="bg-accent/20 text-accent rounded-full w-10 h-10 flex items-center justify-center text-2xl">🌎</span>
+                  <span className="bg-accent/20 text-accent rounded-full w-12 h-12 flex items-center justify-center"><Globe className="w-7 h-7" /></span>
                   <div className="text-left">
-                    <span className="font-semibold text-primary">Efficient land use</span>
-                    <p className="text-muted-foreground text-sm">More protein per acre compared to cattle or pigs.</p>
+                    <span className="font-semibold text-primary text-lg md:text-xl">Efficient land use</span>
+                    <p className="text-muted-foreground text-base md:text-lg">More protein per acre compared to cattle or pigs.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="bg-accent/20 text-accent rounded-full w-10 h-10 flex items-center justify-center text-2xl">🦩</span>
+                  <span className="bg-accent/20 text-accent rounded-full w-12 h-12 flex items-center justify-center"><Egg className="w-7 h-7" /></span>
                   <div className="text-left">
-                    <span className="font-semibold text-primary">Multiple valuable products</span>
-                    <p className="text-muted-foreground text-sm">Meat, eggs, leather, feathers, and oil.</p>
+                    <span className="font-semibold text-primary text-lg md:text-xl">Multiple valuable products</span>
+                    <p className="text-muted-foreground text-base md:text-lg">Meat, eggs, leather, feathers, and oil.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="bg-accent/20 text-accent rounded-full w-10 h-10 flex items-center justify-center text-2xl">🌤️</span>
+                  <span className="bg-accent/20 text-accent rounded-full w-12 h-12 flex items-center justify-center"><Sun className="w-7 h-7" /></span>
                   <div className="text-left">
-                    <span className="font-semibold text-primary">Environmentally friendly</span>
-                    <p className="text-muted-foreground text-sm">Lower carbon footprint and drought resistance.</p>
+                    <span className="font-semibold text-primary text-lg md:text-xl">Environmentally friendly</span>
+                    <p className="text-muted-foreground text-base md:text-lg">Lower carbon footprint and drought resistance.</p>
                   </div>
                 </div>
               </div>
