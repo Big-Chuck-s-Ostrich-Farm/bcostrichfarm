@@ -182,5 +182,155 @@ export const recipes = [
       "Remove wings from oven and toss immediately in the sauce until well coated.",
       "Garnish with chopped parsley and serve hot."
     ]
+  },
+  {
+    id: 7,
+    name: "Grilled Ostrich Heart Skewers",
+    description: "Tender ostrich heart marinated and grilled on skewers for a unique delicacy.",
+    image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=80", // Placeholder
+    prepTime: "20 min",
+    cookTime: "10 min",
+    servings: 4,
+    difficulty: "Medium",
+    ingredients: [
+      "1 lb ostrich heart, cleaned and cut into 1-inch cubes",
+      "2 tbsp olive oil",
+      "2 tbsp soy sauce",
+      "2 cloves garlic, minced",
+      "1 tsp smoked paprika",
+      "1/2 tsp black pepper",
+      "1/2 tsp salt",
+      "Wooden or metal skewers"
+    ],
+    instructions: [
+      "In a bowl, combine olive oil, soy sauce, garlic, paprika, salt, and pepper. Add ostrich heart cubes and marinate for at least 1 hour.",
+      "Thread heart pieces onto skewers.",
+      "Preheat grill to medium-high. Grill skewers for 2-3 minutes per side until just cooked through.",
+      "Serve hot with your favorite dipping sauce."
+    ]
+  },
+  {
+    id: 8,
+    name: "Sautéed Ostrich Liver with Onions",
+    description: "Rich ostrich liver sautéed with sweet onions and herbs.",
+    image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80", // Placeholder
+    prepTime: "10 min",
+    cookTime: "15 min",
+    servings: 2,
+    difficulty: "Easy",
+    ingredients: [
+      "1/2 lb ostrich liver, sliced",
+      "1 large onion, thinly sliced",
+      "2 tbsp butter",
+      "1 tbsp olive oil",
+      "1/2 tsp salt",
+      "1/4 tsp black pepper",
+      "1 tsp fresh thyme leaves"
+    ],
+    instructions: [
+      "Heat butter and olive oil in a skillet over medium heat. Add onions and cook until soft and golden.",
+      "Add ostrich liver, salt, pepper, and thyme. Sauté for 3-4 minutes per side until just cooked through.",
+      "Serve immediately with crusty bread or rice."
+    ]
+  },
+  {
+    id: 9,
+    name: "Ostrich Tenderloin Medallions",
+    description: "Juicy ostrich tenderloin medallions pan-seared and finished with a red wine reduction.",
+    image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80", // Placeholder
+    prepTime: "15 min",
+    cookTime: "12 min",
+    servings: 2,
+    difficulty: "Medium",
+    ingredients: [
+      "2 ostrich tenderloin steaks (about 6 oz each)",
+      "Salt and pepper to taste",
+      "1 tbsp olive oil",
+      "2 tbsp butter",
+      "1/2 cup red wine",
+      "1 tsp fresh rosemary, chopped"
+    ],
+    instructions: [
+      "Season tenderloin steaks with salt and pepper.",
+      "Heat olive oil in a skillet over medium-high heat. Sear steaks 2-3 minutes per side for medium-rare. Remove and rest.",
+      "Add butter, rosemary, and red wine to the pan. Simmer until reduced by half.",
+      "Serve steaks with pan sauce drizzled over the top."
+    ]
+  },
+  {
+    id: 10,
+    name: "Pan-Seared Ostrich Fan Fillet",
+    description: "Lean ostrich fan fillet quickly pan-seared and served with a fresh herb salad.",
+    image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=80", // Placeholder
+    prepTime: "10 min",
+    cookTime: "8 min",
+    servings: 2,
+    difficulty: "Easy",
+    ingredients: [
+      "2 ostrich fan fillets (about 5 oz each)",
+      "Salt and pepper to taste",
+      "1 tbsp olive oil",
+      "1 tbsp lemon juice",
+      "1 cup mixed fresh herbs (parsley, cilantro, mint)",
+      "1/2 cup cherry tomatoes, halved"
+    ],
+    instructions: [
+      "Pat fillets dry and season with salt and pepper.",
+      "Heat olive oil in a skillet over high heat. Sear fillets 2-3 minutes per side for medium-rare.",
+      "Toss herbs and tomatoes with lemon juice. Serve fillets topped with herb salad."
+    ]
+  },
+  {
+    id: 11,
+    name: "Ostrich Medallion au Poivre",
+    description: "Classic French-style ostrich medallions with a peppercorn cream sauce.",
+    image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80", // Placeholder
+    prepTime: "15 min",
+    cookTime: "15 min",
+    servings: 2,
+    difficulty: "Medium",
+    ingredients: [
+      "2 ostrich medallions (about 4 oz each)",
+      "1 tbsp black peppercorns, crushed",
+      "Salt to taste",
+      "1 tbsp olive oil",
+      "2 tbsp butter",
+      "1/4 cup heavy cream",
+      "1/4 cup brandy or cognac"
+    ],
+    instructions: [
+      "Press crushed peppercorns onto both sides of medallions. Season with salt.",
+      "Heat olive oil and butter in a skillet over medium-high heat. Sear medallions 2-3 minutes per side.",
+      "Remove medallions. Add brandy to pan, simmer 1 minute, then add cream. Reduce until thickened.",
+      "Return medallions to pan to coat with sauce. Serve immediately."
+    ]
+  },
+  {
+    id: 12,
+    name: "Ostrich Steak Strips Stir-Fry",
+    description: "Quick stir-fry of ostrich steak strips with colorful vegetables and a savory sauce.",
+    image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=80", // Placeholder
+    prepTime: "15 min",
+    cookTime: "10 min",
+    servings: 3,
+    difficulty: "Easy",
+    ingredients: [
+      "1 lb ostrich steak strips",
+      "2 tbsp soy sauce",
+      "1 tbsp oyster sauce",
+      "1 tbsp cornstarch",
+      "2 tbsp vegetable oil",
+      "1 red bell pepper, sliced",
+      "1 cup broccoli florets",
+      "1 carrot, sliced",
+      "2 cloves garlic, minced",
+      "1/2 cup sliced green onions"
+    ],
+    instructions: [
+      "Toss steak strips with soy sauce, oyster sauce, and cornstarch. Let marinate 10 minutes.",
+      "Heat oil in a wok or skillet over high heat. Stir-fry steak strips 2-3 minutes, then remove.",
+      "Add vegetables and garlic, stir-fry 3-4 minutes until crisp-tender.",
+      "Return steak to pan, toss to combine, and heat through. Serve hot."
+    ]
   }
 ];
