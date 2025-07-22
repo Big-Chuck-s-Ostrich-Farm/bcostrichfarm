@@ -48,10 +48,6 @@ const Recipes = () => {
                 <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">6</span>
                 Marinate for enhanced flavor and tenderness
               </p>
-              <p className="flex items-start">
-                <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">7</span>
-                Ostrich pairs beautifully with bold herbs and robust sauces
-              </p>
             </div>
           </div>
         </div>
