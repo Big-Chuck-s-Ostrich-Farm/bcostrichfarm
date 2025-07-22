@@ -1,5 +1,6 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import React from "react";
 
 const Products = () => {
   const products = [
@@ -101,6 +102,13 @@ const Products = () => {
     }
   ];
 
+  // Extract unique tags (categories)
+  const tags = Array.from(new Set(products.map((p) => p.category)));
+  const [selectedTag, setSelectedTag] = React.useState<string | null>(null);
+
+  // Filter products by selected tag
+  const filteredProducts = selectedTag ? products.filter((p) => p.category === selectedTag) : products;
+
   return (
     <div className="min-h-screen bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -109,10 +117,28 @@ const Products = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Discover our range of high-quality ostrich products, all raised with care on our family farm.
           </p>
+          {/* Tag filter buttons */}
+          <div className="flex flex-wrap justify-center gap-3 mt-6">
+            <button
+              className={`px-4 py-2 rounded-full border font-medium transition-colors ${!selectedTag ? 'bg-accent text-accent-foreground border-accent' : 'bg-background text-muted-foreground border-muted-foreground hover:bg-accent/10'}`}
+              onClick={() => setSelectedTag(null)}
+            >
+              All
+            </button>
+            {tags.map((tag) => (
+              <button
+                key={tag}
+                className={`px-4 py-2 rounded-full border font-medium transition-colors ${selectedTag === tag ? 'bg-accent text-accent-foreground border-accent' : 'bg-background text-muted-foreground border-muted-foreground hover:bg-accent/10'}`}
+                onClick={() => setSelectedTag(tag)}
+              >
+                {tag}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
+          {filteredProducts.map((product) => (
             <Card key={product.id} className="vintage-container hover:shadow-lg transition-shadow">
               <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">
                 <img 
