@@ -81,7 +81,7 @@ export const recipes = [
     id: 4,
     name: "Ostrich Neck and Mushroom Stew",
     description: "Hearty stew with root vegetables and rich broth",
-    image: "https://images.unsplash.com/photo-1695216000000-fSV3SArHjs8?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80", // Updated to direct Unsplash meatball image
     prepTime: "30 min",
     cookTime: "2.5-3 hr",
     servings: 3,
