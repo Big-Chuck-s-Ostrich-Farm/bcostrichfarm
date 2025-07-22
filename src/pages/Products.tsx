@@ -62,7 +62,7 @@ const Products = () => {
     {
       id: 8,
       name: "Fan Fillet",
-      description: "Lean, flavorful fillet from the thigh—great for quick searing or slicing for salads.",
+      description: "The ostrich fan fillet is the most prized primal muscle cut—exceptionally tender, lean, and rich in flavor. Perfect for marinating, grilling, or searing, this premium cut absorbs flavors beautifully and delivers a luxurious, juicy bite. Packaged whole to preserve its purity and versatility.",
       category: "Fillet",
       features: ["Lean", "Quick sear", "Great for salads"],
       image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=80"
