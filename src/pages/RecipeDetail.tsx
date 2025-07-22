@@ -42,7 +42,7 @@ const RecipeDetail = () => {
               />
             </div>
             
-            <Card className="vintage-container">
+            <Card className="vintage-container mb-8">
               <CardHeader>
                 <CardTitle className="vintage-subtitle">Recipe Overview</CardTitle>
               </CardHeader>
@@ -73,7 +73,7 @@ const RecipeDetail = () => {
             </Card>
 
             {/* Chef's Tips */}
-            <Card className="vintage-container bg-accent/5 mb-8">
+            <Card className="vintage-container bg-accent/5">
               <CardHeader>
                 <CardTitle className="vintage-subtitle text-accent">Chef's Tips</CardTitle>
               </CardHeader>
