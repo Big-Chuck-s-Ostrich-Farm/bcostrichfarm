@@ -19,14 +19,15 @@ const Contact = () => {
             <CardHeader>
               <CardTitle className="vintage-subtitle flex items-center">
                 <MapPin className="w-6 h-6 mr-2 text-accent" />
-                Japan Town Farmers' Market
+                Farmers Market
               </CardTitle>
+              <h4 className="font-semibold text-primary text-lg mt-2">Japan Town Farmers' Market</h4>
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
                 <p className="text-muted-foreground text-base font-semibold mb-1">Every Sunday, 9:00 AM - 12:00 PM</p>
                 <p className="text-muted-foreground text-sm mb-2">357 E Taylor St, San Jose, CA 95112</p>
-                <h4 className="font-semibold text-primary mb-2">What We Bring</h4>
+                <h4 className="font-semibold text-primary mb-2 mt-6">What We Bring</h4>
                 <ul className="text-muted-foreground text-sm space-y-1 mb-2">
                   <li>• Frozen vacuum sealed ostrich meat</li>
                 </ul>
