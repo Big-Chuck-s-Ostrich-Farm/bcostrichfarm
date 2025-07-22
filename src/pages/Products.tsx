@@ -118,22 +118,24 @@ const Products = () => {
             Discover our range of high-quality ostrich products, all raised with care on our family farm.
           </p>
           {/* Tag filter buttons */}
-          <div className="flex flex-wrap justify-center gap-3 mt-6">
-            <button
-              className={`px-4 py-2 rounded-full border font-medium transition-colors ${!selectedTag ? 'bg-accent text-accent-foreground border-accent' : 'bg-background text-muted-foreground border-muted-foreground hover:bg-accent/10'}`}
-              onClick={() => setSelectedTag(null)}
-            >
-              All
-            </button>
-            {tags.map((tag) => (
+          <div className="flex justify-center mt-6 mb-8">
+            <div className="flex space-x-2 bg-card p-2 rounded-lg border border-primary/20">
               <button
-                key={tag}
-                className={`px-4 py-2 rounded-full border font-medium transition-colors ${selectedTag === tag ? 'bg-accent text-accent-foreground border-accent' : 'bg-background text-muted-foreground border-muted-foreground hover:bg-accent/10'}`}
-                onClick={() => setSelectedTag(tag)}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${!selectedTag ? 'bg-primary text-primary-foreground' : 'hover:bg-muted text-muted-foreground'}`}
+                onClick={() => setSelectedTag(null)}
               >
-                {tag}
+                All
               </button>
-            ))}
+              {tags.map((tag) => (
+                <button
+                  key={tag}
+                  className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${selectedTag === tag ? 'bg-primary text-primary-foreground' : 'hover:bg-muted text-muted-foreground'}`}
+                  onClick={() => setSelectedTag(tag)}
+                >
+                  {tag}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 
