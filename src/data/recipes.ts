@@ -6,7 +6,7 @@ export const recipes = [
     image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
     prepTime: "15 min",
     cookTime: "20 min",
-    servings: 4,
+    servings: 2,
     difficulty: "Easy",
     ingredients: [
       "2 oyster steak (6-8 oz)",
