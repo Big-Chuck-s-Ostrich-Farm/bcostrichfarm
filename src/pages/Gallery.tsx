@@ -153,14 +153,12 @@ const Gallery = () => {
                 <img 
                   src={image.src} 
                   alt={image.alt}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain bg-black hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="mt-4">
                 <p className="text-sm text-accent font-medium">{image.category}</p>
-                {!(image.src.startsWith('/ostrich')) && (
-                  <p className="text-muted-foreground">{image.alt}</p>
-                )}
+                <p className="text-muted-foreground">{image.alt}</p>
               </div>
             </div>
           ))}
