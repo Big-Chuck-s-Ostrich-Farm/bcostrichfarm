@@ -158,7 +158,9 @@ const Gallery = () => {
               </div>
               <div className="mt-4">
                 <p className="text-sm text-accent font-medium">{image.category}</p>
-                <p className="text-muted-foreground">{image.alt}</p>
+                {!(image.src.startsWith('/ostrich')) && (
+                  <p className="text-muted-foreground">{image.alt}</p>
+                )}
               </div>
             </div>
           ))}
