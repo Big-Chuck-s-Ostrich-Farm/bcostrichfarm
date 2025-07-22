@@ -118,29 +118,38 @@ const Facts = () => {
         {/* Nutrition Comparison Table */}
         <div className="vintage-container mb-16">
           <h2 className="vintage-subtitle text-center mb-8">Nutritional Comparison (per 100g)</h2>
-          <div className="overflow-x-auto">
-            <Table>
-              <TableHeader>
-                <TableRow className="text-lg">
-                  <TableHead className="font-semibold text-lg">Nutrient</TableHead>
-                  <TableHead className="text-center font-semibold text-accent text-lg">Ostrich</TableHead>
-                  <TableHead className="text-center font-semibold text-lg">Beef</TableHead>
-                  <TableHead className="text-center font-semibold text-lg">Pork</TableHead>
-                  <TableHead className="text-center font-semibold text-lg">Chicken</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {nutritionData.map((row) => (
-                  <TableRow key={row.nutrient} className="text-lg">
-                    <TableCell className="font-medium text-lg">{row.nutrient}</TableCell>
-                    <TableCell className="text-center font-bold text-accent bg-accent/10 text-lg">{row.Ostrich}</TableCell>
-                    <TableCell className="text-center text-lg">{row.Beef}</TableCell>
-                    <TableCell className="text-center text-lg">{row.Pork}</TableCell>
-                    <TableCell className="text-center text-lg">{row.Chicken}</TableCell>
+          <div className="overflow-x-auto flex justify-center">
+            <div className="w-full max-w-2xl">
+              <Table className="w-full table-fixed">
+                <colgroup>
+                  <col className="w-1/5" />
+                  <col className="w-1/5" />
+                  <col className="w-1/5" />
+                  <col className="w-1/5" />
+                  <col className="w-1/5" />
+                </colgroup>
+                <TableHeader>
+                  <TableRow className="text-lg">
+                    <TableHead className="font-semibold text-lg">Nutrient</TableHead>
+                    <TableHead className="text-center font-semibold text-accent text-lg">Ostrich</TableHead>
+                    <TableHead className="text-center font-semibold text-lg">Beef</TableHead>
+                    <TableHead className="text-center font-semibold text-lg">Pork</TableHead>
+                    <TableHead className="text-center font-semibold text-lg">Chicken</TableHead>
                   </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+                </TableHeader>
+                <TableBody>
+                  {nutritionData.map((row) => (
+                    <TableRow key={row.nutrient} className="text-lg">
+                      <TableCell className="font-medium text-lg">{row.nutrient}</TableCell>
+                      <TableCell className="text-center font-bold text-accent bg-accent/10 text-lg">{row.Ostrich}</TableCell>
+                      <TableCell className="text-center text-lg">{row.Beef}</TableCell>
+                      <TableCell className="text-center text-lg">{row.Pork}</TableCell>
+                      <TableCell className="text-center text-lg">{row.Chicken}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
           </div>
           <p className="text-center text-muted-foreground text-sm mt-4">
             *Values are approximate and may vary based on preparation method and cut
