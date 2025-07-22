@@ -69,15 +69,14 @@ const Navigation = () => {
                 {link.label}
               </Link>
             ))}
+            <button
+              onClick={toggleDarkMode}
+              className="ml-4 p-2 rounded-full border border-primary/30 bg-background hover:bg-primary/10 transition-colors text-primary flex items-center justify-center"
+              aria-label="Toggle dark mode"
+            >
+              <Moon className={isDark ? "fill-primary text-background" : "text-primary"} size={24} />
+            </button>
           </div>
-          {/* Dark mode toggle button */}
-          <button
-            onClick={toggleDarkMode}
-            className="ml-4 p-2 rounded-full border border-primary/30 bg-background hover:bg-primary/10 transition-colors text-primary flex items-center justify-center"
-            aria-label="Toggle dark mode"
-          >
-            <Moon className={isDark ? "fill-primary text-background" : "text-primary"} size={24} />
-          </button>
           {/* Mobile menu button */}
           <div className="md:hidden ml-2">
             <button
@@ -107,6 +106,13 @@ const Navigation = () => {
                 {link.label}
               </Link>
             ))}
+            <button
+              onClick={toggleDarkMode}
+              className="block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors text-primary border border-primary/20 mt-2"
+              aria-label="Toggle dark mode"
+            >
+              <span className="flex items-center"><Moon className={isDark ? "fill-primary text-background mr-2" : "text-primary mr-2"} size={24} /> Toggle dark mode</span>
+            </button>
           </div>
         </div>
       )}
