@@ -24,24 +24,12 @@ const Recipes = () => {
             <div className="space-y-3">
               <p className="flex items-start">
                 <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">1</span>
-                Ostrich meat is very lean, so don't overcook it - medium-rare is perfect
-              </p>
-              <p className="flex items-start">
-                <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">2</span>
-                Let the meat rest at room temperature before cooking for best results
-              </p>
-              <p className="flex items-start">
-                <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">3</span>
                 One ostrich egg equals about 24 chicken eggs
               </p>
             </div>
             <div className="space-y-3">
               <p className="flex items-start">
                 <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">4</span>
-                Enhance ostrich meat with bold flavors and herbs for a delicious dish or keep it simple with just salt and pepper for a classic taste.
-              </p>
-              <p className="flex items-start">
-                <span className="bg-accent text-accent-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">5</span>
                 Always use a meat thermometer for best results (135&deg; F for medium rare; 165&deg; F for well done)
               </p>
               <p className="flex items-start">
