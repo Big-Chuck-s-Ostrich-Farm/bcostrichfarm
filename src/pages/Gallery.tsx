@@ -5,43 +5,7 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const galleryImages = [
-    {
-      id: 1,
-      src: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800&h=600&fit=crop",
-      alt: "Ostriches roaming in the pasture",
-      category: "Farm Life"
-    },
-    {
-      id: 2,
-      src: "https://images.unsplash.com/photo-1517022812141-23620dba5c23?w=800&h=600&fit=crop",
-      alt: "Young ostriches in the field",
-      category: "Farm Life"
-    },
-    {
-      id: 3,
-      src: "https://images.unsplash.com/photo-1493962853295-0fd70327578a?w=800&h=600&fit=crop",
-      alt: "Adult ostrich portrait",
-      category: "Our Birds"
-    },
-    {
-      id: 4,
-      src: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=800&h=600&fit=crop",
-      alt: "Farm landscape with flowers",
-      category: "Farm Life"
-    },
-    {
-      id: 5,
-      src: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=800&h=600&fit=crop",
-      alt: "Farm cat resting",
-      category: "Farm Life"
-    },
-    {
-      id: 6,
-      src: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800&h=600&fit=crop",
-      alt: "Sunset over the farm",
-      category: "Scenery"
-    },
-    // User-uploaded images in public/
+    // Only ostrichN.jpg images below
     {
       id: 101,
       src: "/ostrich1.jpg",
@@ -165,7 +129,7 @@ const Gallery = () => {
                     <img
                       src={image.src}
                       alt={image.alt}
-                      className="absolute inset-0 w-full h-full object-cover blur-sm scale-110"
+                      className="absolute inset-0 w-full h-full object-cover blur-2xl scale-110"
                       aria-hidden="true"
                     />
                     <img
