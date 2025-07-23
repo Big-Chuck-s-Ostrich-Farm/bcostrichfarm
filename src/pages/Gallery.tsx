@@ -45,61 +45,61 @@ const Gallery = () => {
     {
       id: 101,
       src: "/ostrich1.jpg",
-      alt: "Ostrich photo 1",
+      alt: "Ostrich standing in a sunny field",
       category: "Our Birds"
     },
     {
       id: 102,
       src: "/ostrich2.jpg",
-      alt: "Ostrich photo 2",
+      alt: "Close-up of an ostrich's face and beak",
       category: "Our Birds"
     },
     {
       id: 103,
       src: "/ostrich3.jpg",
-      alt: "Ostrich photo 3",
+      alt: "Group of ostriches walking together",
       category: "Our Birds"
     },
     {
       id: 104,
       src: "/ostrich4.jpg",
-      alt: "Ostrich photo 4",
+      alt: "Ostrich with wings spread wide",
       category: "Our Birds"
     },
     {
       id: 105,
       src: "/ostrich5.jpg",
-      alt: "Ostrich photo 5",
+      alt: "Ostrich looking at the camera",
       category: "Our Birds"
     },
     {
       id: 106,
       src: "/ostrich6.jpg",
-      alt: "Ostrich photo 6",
+      alt: "Ostrich resting on the ground",
       category: "Our Birds"
     },
     {
       id: 107,
       src: "/ostrich7.jpg",
-      alt: "Ostrich photo 7",
+      alt: "Ostrich running across the pasture",
       category: "Our Birds"
     },
     {
       id: 108,
       src: "/ostrich8.jpg",
-      alt: "Ostrich photo 8",
+      alt: "Young ostrich chick in the grass",
       category: "Our Birds"
     },
     {
       id: 109,
       src: "/ostrich9.jpg",
-      alt: "Ostrich photo 9",
+      alt: "Ostrich with a scenic farm background",
       category: "Our Birds"
     },
     {
       id: 110,
       src: "/ostrich10.jpg",
-      alt: "Ostrich photo 10",
+      alt: "Ostrich pecking at the ground",
       category: "Our Birds"
     },
   ];
