@@ -9,70 +9,70 @@ const Gallery = () => {
     {
       id: 101,
       src: "/ostrich1.jpg",
-      alt: "Ostrich standing in a sunny field",
+      alt: "Young Chuck and Cinamon in the paddock.",
       category: "Our Birds",
       objectPosition: "object-top"
     },
     {
       id: 102,
       src: "/ostrich2.jpg",
-      alt: "Close-up of an ostrich's face and beak",
+      alt: "2 ostrich chicks in the field.",
       category: "Our Birds",
       objectPosition: "object-center"
     },
     {
       id: 103,
       src: "/ostrich3.jpg",
-      alt: "Group of ostriches walking together",
+      alt: "Majestic Fowler.",
       category: "Our Birds",
       objectPosition: "object-top"
     },
     {
       id: 104,
       src: "/ostrich4.jpg",
-      alt: "Ostrich with wings spread wide",
+      alt: "A flock of ostriches.",
       category: "Our Birds",
       objectPosition: "object-center"
     },
     {
       id: 105,
       src: "/ostrich5.jpg",
-      alt: "Ostrich looking at the camera",
+      alt: "Chuck, Cinamon and Dephane in the forest.",
       category: "Our Birds",
       objectPosition: "object-top"
     },
     {
       id: 106,
       src: "/ostrich6.jpg",
-      alt: "Ostrich resting on the ground",
+      alt: "Baby in the shell.",
       category: "Our Birds",
       objectPosition: "object-center"
     },
     {
       id: 107,
       src: "/ostrich7.jpg",
-      alt: "Ostrich running across the pasture",
+      alt: "Ostrich foot up close.",
       category: "Our Birds",
       objectPosition: "object-center"
     },
     {
       id: 108,
       src: "/ostrich8.jpg",
-      alt: "Young ostrich chick in the grass",
+      alt: "Dephane in the trees.",
       category: "Our Birds",
       objectPosition: "object-top"
     },
     {
       id: 109,
       src: "/ostrich9.jpg",
-      alt: "Ostrich with a scenic farm background",
+      alt: "baby, look at me.",
       category: "Our Birds",
       objectPosition: "object-top"
     },
     {
       id: 110,
       src: "/ostrich10.jpg",
-      alt: "Ostrich pecking at the ground",
+      alt: "Ostrich closeup.",
       category: "Our Birds",
       objectPosition: "object-center"
     },
