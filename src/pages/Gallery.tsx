@@ -46,61 +46,71 @@ const Gallery = () => {
       id: 101,
       src: "/ostrich1.jpg",
       alt: "Ostrich standing in a sunny field",
-      category: "Our Birds"
+      category: "Our Birds",
+      objectPosition: "object-top"
     },
     {
       id: 102,
       src: "/ostrich2.jpg",
       alt: "Close-up of an ostrich's face and beak",
-      category: "Our Birds"
+      category: "Our Birds",
+      objectPosition: "object-center"
     },
     {
       id: 103,
       src: "/ostrich3.jpg",
       alt: "Group of ostriches walking together",
-      category: "Our Birds"
+      category: "Our Birds",
+      objectPosition: "object-top"
     },
     {
       id: 104,
       src: "/ostrich4.jpg",
       alt: "Ostrich with wings spread wide",
-      category: "Our Birds"
+      category: "Our Birds",
+      objectPosition: "object-center"
     },
     {
       id: 105,
       src: "/ostrich5.jpg",
       alt: "Ostrich looking at the camera",
-      category: "Our Birds"
+      category: "Our Birds",
+      objectPosition: "object-top"
     },
     {
       id: 106,
       src: "/ostrich6.jpg",
       alt: "Ostrich resting on the ground",
-      category: "Our Birds"
+      category: "Our Birds",
+      objectPosition: "object-center"
     },
     {
       id: 107,
       src: "/ostrich7.jpg",
       alt: "Ostrich running across the pasture",
-      category: "Our Birds"
+      category: "Our Birds",
+      objectPosition: "object-center"
     },
     {
       id: 108,
       src: "/ostrich8.jpg",
       alt: "Young ostrich chick in the grass",
-      category: "Our Birds"
+      category: "Our Birds",
+      objectPosition: "object-top"
     },
     {
       id: 109,
       src: "/ostrich9.jpg",
       alt: "Ostrich with a scenic farm background",
-      category: "Our Birds"
+      category: "Our Birds",
+      objectPosition: "object-top"
     },
     {
       id: 110,
       src: "/ostrich10.jpg",
       alt: "Ostrich pecking at the ground",
-      category: "Our Birds"
+      category: "Our Birds",
+      objectPosition: "object-center"
     },
   ];
 
@@ -153,7 +163,7 @@ const Gallery = () => {
                 <img 
                   src={image.src} 
                   alt={image.alt}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className={`w-full h-full object-cover ${image.objectPosition || 'object-center'} hover:scale-105 transition-transform duration-300`}
                 />
               </div>
               <div className="mt-4">
