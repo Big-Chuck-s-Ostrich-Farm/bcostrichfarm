@@ -159,12 +159,28 @@ const Gallery = () => {
               className="vintage-container cursor-pointer hover:shadow-lg transition-shadow"
               onClick={() => setSelectedImage(image.src)}
             >
-              <div className="aspect-video bg-muted rounded-lg overflow-hidden">
-                <img 
-                  src={image.src} 
-                  alt={image.alt}
-                  className={`w-full h-full object-cover ${image.objectPosition || 'object-center'} hover:scale-105 transition-transform duration-300`}
-                />
+              <div className="aspect-video bg-muted rounded-lg overflow-hidden relative">
+                {['ostrich1.jpg','ostrich3.jpg','ostrich5.jpg','ostrich8.jpg','ostrich9.jpg'].includes(image.src.replace('/', '')) ? (
+                  <>
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="absolute inset-0 w-full h-full object-cover blur-sm scale-110"
+                      aria-hidden="true"
+                    />
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="relative w-full h-full object-contain z-10"
+                    />
+                  </>
+                ) : (
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className={`w-full h-full object-cover ${image.objectPosition || 'object-center'} hover:scale-105 transition-transform duration-300`}
+                  />
+                )}
               </div>
               <div className="mt-4">
                 <p className="text-sm text-accent font-medium">{image.category}</p>
