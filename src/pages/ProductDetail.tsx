@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 // Copy of the products array from Products.tsx
 const products = [
@@ -131,68 +131,83 @@ const ProductDetail = () => {
 
   if (!product) {
     return (
-      <div className="max-w-2xl mx-auto py-12 px-4">
-        <h1 className="text-2xl font-bold mb-4">Product Not Found</h1>
-        <Link to="/products" className="text-primary underline">Back to Products</Link>
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="vintage-title mb-4">Product Not Found</h1>
+          <Link to="/products" className="text-primary underline">Back to Products</Link>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <Link to="/products" className="text-primary underline mb-6 inline-block">&larr; Back to Products</Link>
-      <div className="flex flex-col md:flex-row gap-8">
-        {/* Product Image */}
-        <div className="flex-1 flex flex-col items-center md:items-start">
-          <div className="w-full aspect-video bg-muted rounded-lg mb-4 overflow-hidden shadow-md">
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="mt-2 text-center md:text-left">
-            <span className="inline-block bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold tracking-wide mb-2">
-              {product.category}
-            </span>
-            <h1 className="vintage-title text-3xl font-bold mb-2">{product.name}</h1>
-          </div>
-        </div>
-        {/* Product Details */}
-        <div className="flex-1 flex flex-col gap-6">
-          <section>
-            <h2 className="vintage-subtitle text-2xl mb-2">Highlights</h2>
-            <ul className="list-disc pl-6 text-muted-foreground space-y-1">
-              {highlights.map((h, i) => (
-                <li key={i}>{h}</li>
-              ))}
-            </ul>
-          </section>
-          <section>
-            <h2 className="vintage-subtitle text-2xl mb-2">Description</h2>
-            <p className="text-muted-foreground mb-2">{product.description}</p>
-            <div className="space-y-2">
-              <h4 className="font-semibold text-primary">Features:</h4>
-              <ul className="text-sm text-muted-foreground space-y-1">
-                {product.features.map((feature, index) => (
-                  <li key={index} className="flex items-center">
-                    <span className="w-2 h-2 bg-accent rounded-full mr-3"></span>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
+    <div className="min-h-screen bg-background">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <Link to="/products" className="inline-flex items-center mb-8 text-primary hover:underline">
+          &larr; Back to Products
+        </Link>
+        <div className="grid lg:grid-cols-2 gap-12">
+          {/* Left column: Image and Highlights */}
+          <div>
+            <div className="aspect-video bg-muted rounded-lg overflow-hidden mb-6">
+              <img 
+                src={product.image} 
+                alt={product.name}
+                className="w-full h-full object-cover"
+              />
             </div>
-          </section>
-          <section>
-            <h2 className="vintage-subtitle text-2xl mb-2">Recipe Ideas</h2>
-            <ul className="space-y-2">
-              {recipeIdeas.map((r, i) => (
-                <li key={i} className="bg-muted rounded-lg p-3 shadow-sm">
-                  <span className="font-semibold text-primary">{r.title}:</span> {r.description}
-                </li>
-              ))}
-            </ul>
-          </section>
+            <Card className="vintage-container mb-8">
+              <CardHeader>
+                <CardTitle className="vintage-subtitle">Highlights</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="list-disc pl-6 text-muted-foreground space-y-1">
+                  {highlights.map((h, i) => (
+                    <li key={i}>{h}</li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+          {/* Right column: Description and Recipe Ideas */}
+          <div className="space-y-8">
+            <div>
+              <h1 className="vintage-title mb-4">{product.name}</h1>
+              <span className="inline-block bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold tracking-wide mb-2">
+                {product.category}
+              </span>
+              <p className="text-lg text-muted-foreground mt-2">{product.description}</p>
+            </div>
+            <Card className="vintage-container mb-8">
+              <CardHeader>
+                <CardTitle className="vintage-subtitle">Features</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  {product.features.map((feature, index) => (
+                    <li key={index} className="flex items-center">
+                      <span className="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="vintage-container">
+              <CardHeader>
+                <CardTitle className="vintage-subtitle">Recipe Ideas</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2">
+                  {recipeIdeas.map((r, i) => (
+                    <li key={i} className="bg-muted rounded-lg p-3 shadow-sm">
+                      <span className="font-semibold text-primary">{r.title}:</span> {r.description}
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </div>
