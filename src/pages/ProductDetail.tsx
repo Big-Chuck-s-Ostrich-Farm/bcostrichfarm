@@ -207,21 +207,14 @@ const ProductDetail = () => {
                                 <span>Difficulty: {recipe.difficulty}</span>
                               </div>
                             </div>
-                            <div className="flex flex-wrap gap-1">
-                              {recipe.cuts.map((cut, index) => (
-                                <span key={index} className="inline-block bg-primary text-primary-foreground px-2 py-1 rounded-full text-xs font-semibold tracking-wide">
-                                  {cut}
-                                </span>
-                              ))}
-                            </div>
                           </div>
                         </div>
                       </Link>
                     ))}
                     {relatedRecipes.length > 3 && (
-                      <div className="text-center pt-2">
+                      <div className="text-left pt-2">
                         <Link 
-                          to={`/recipes?cut=${encodeURIComponent(product.name)}`}
+                          to={`/recipes?cut=${encodeURIComponent(product.category)}`}
                           className="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm font-medium"
                         >
                           See more recipes
