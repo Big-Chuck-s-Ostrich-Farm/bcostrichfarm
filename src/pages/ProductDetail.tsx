@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 
 // Copy of the products array from Products.tsx
 const products = [
@@ -102,6 +102,29 @@ const products = [
   }
 ];
 
+const highlights = [
+  "Lower in saturated fat & cholesterol than beef, bison, deer, and even chicken",
+  "Packs the most protein & iron per serving among red meats",
+  "Alpha-Gal safe",
+  "USDA inspected, flash-frozen at peak freshness",
+  "Free from preservatives, fillers, and hormones"
+];
+
+const recipeIdeas = [
+  {
+    title: "Ostrich Carpaccio",
+    description: "A light, fresh, zero-carb plate that can be served as an impressive appetizer or a light meal."
+  },
+  {
+    title: "Fan Fajitas",
+    description: "Marinate and grill for outstanding tenderness and flavor retention."
+  },
+  {
+    title: "Bacon & Herb Wrapped Ostrich Fan",
+    description: "Wrapped in bacon and aromatic herbs, perfect for special occasions."
+  }
+];
+
 const ProductDetail = () => {
   const { id } = useParams();
   const product = products.find((p) => p.id === Number(id));
@@ -116,36 +139,62 @@ const ProductDetail = () => {
   }
 
   return (
-    <div className="max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <Link to="/products" className="text-primary underline mb-4 inline-block">&larr; Back to Products</Link>
-      <Card>
-        <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">
-          <img
-            src={product.image}
-            alt={product.name}
-            className="w-full h-full object-cover"
-          />
+    <div className="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <Link to="/products" className="text-primary underline mb-6 inline-block">&larr; Back to Products</Link>
+      <div className="flex flex-col md:flex-row gap-8">
+        {/* Product Image */}
+        <div className="flex-1 flex flex-col items-center md:items-start">
+          <div className="w-full aspect-video bg-muted rounded-lg mb-4 overflow-hidden shadow-md">
+            <img
+              src={product.image}
+              alt={product.name}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="mt-2 text-center md:text-left">
+            <span className="inline-block bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold tracking-wide mb-2">
+              {product.category}
+            </span>
+            <h1 className="vintage-title text-3xl font-bold mb-2">{product.name}</h1>
+          </div>
         </div>
-        <CardHeader>
-          <CardTitle className="vintage-title text-3xl mb-2">{product.name}</CardTitle>
-          <CardDescription className="text-accent font-medium">{product.category}</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p className="text-muted-foreground mb-4">{product.description}</p>
-          <div className="space-y-2">
-            <h4 className="font-semibold text-primary">Features:</h4>
-            <ul className="text-sm text-muted-foreground space-y-1">
-              {product.features.map((feature, index) => (
-                <li key={index} className="flex items-center">
-                  <span className="w-2 h-2 bg-accent rounded-full mr-3"></span>
-                  {feature}
+        {/* Product Details */}
+        <div className="flex-1 flex flex-col gap-6">
+          <section>
+            <h2 className="vintage-subtitle text-2xl mb-2">Highlights</h2>
+            <ul className="list-disc pl-6 text-muted-foreground space-y-1">
+              {highlights.map((h, i) => (
+                <li key={i}>{h}</li>
+              ))}
+            </ul>
+          </section>
+          <section>
+            <h2 className="vintage-subtitle text-2xl mb-2">Description</h2>
+            <p className="text-muted-foreground mb-2">{product.description}</p>
+            <div className="space-y-2">
+              <h4 className="font-semibold text-primary">Features:</h4>
+              <ul className="text-sm text-muted-foreground space-y-1">
+                {product.features.map((feature, index) => (
+                  <li key={index} className="flex items-center">
+                    <span className="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+          <section>
+            <h2 className="vintage-subtitle text-2xl mb-2">Recipe Ideas</h2>
+            <ul className="space-y-2">
+              {recipeIdeas.map((r, i) => (
+                <li key={i} className="bg-muted rounded-lg p-3 shadow-sm">
+                  <span className="font-semibold text-primary">{r.title}:</span> {r.description}
                 </li>
               ))}
             </ul>
-          </div>
-          {/* Placeholder for future details (nutrition, recipes, etc.) */}
-        </CardContent>
-      </Card>
+          </section>
+        </div>
+      </div>
     </div>
   );
 };

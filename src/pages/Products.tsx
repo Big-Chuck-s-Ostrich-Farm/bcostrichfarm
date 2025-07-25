@@ -143,7 +143,7 @@ const Products = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProducts.map((product) => (
             <Link to={`/products/${product.id}`} key={product.id} style={{ textDecoration: 'none' }}>
-              <Card className="vintage-container hover:shadow-lg transition-shadow">
+              <Card className="vintage-container product-card">
                 <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">
                   <img 
                     src={product.image} 
