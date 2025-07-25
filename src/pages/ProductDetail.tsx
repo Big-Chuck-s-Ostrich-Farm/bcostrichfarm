@@ -194,9 +194,9 @@ const ProductDetail = () => {
               <CardContent>
                 {relatedRecipes.length > 0 ? (
                   <div className="space-y-3">
-                    {relatedRecipes.map((recipe) => (
+                    {relatedRecipes.slice(0, 3).map((recipe) => (
                       <Link key={recipe.id} to={`/recipe/${recipe.id}`} className="block">
-                        <div className="bg-muted rounded-lg p-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                        <div className="bg-muted rounded-lg p-3 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 cursor-pointer">
                           <div className="flex items-center justify-between">
                             <div>
                               <h4 className="font-semibold text-primary">{recipe.name}</h4>
@@ -218,6 +218,16 @@ const ProductDetail = () => {
                         </div>
                       </Link>
                     ))}
+                    {relatedRecipes.length > 3 && (
+                      <div className="text-center pt-2">
+                        <Link 
+                          to={`/recipes?cut=${encodeURIComponent(product.name)}`}
+                          className="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm font-medium"
+                        >
+                          See more recipes
+                        </Link>
+                      </div>
+                    )}
                   </div>
                 ) : (
                   <p className="text-muted-foreground">No specific recipes found for this cut. Check our recipes page for general ostrich cooking ideas!</p>

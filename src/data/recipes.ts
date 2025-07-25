@@ -347,5 +347,80 @@ export const recipes = [
       "Add vegetables and garlic, stir-fry 3-4 minutes until crisp-tender.",
       "Return steak to pan, toss to combine, and heat through. Serve hot."
     ]
+  },
+  {
+    id: 13,
+    name: "Ostrich Meatloaf",
+    description: "Classic meatloaf made with lean ground ostrich, packed with flavor and perfect for family dinners.",
+    image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80",
+    prepTime: "20 min",
+    cookTime: "1 hr",
+    servings: 6,
+    difficulty: "Easy",
+    cuts: ["Ground"],
+    ingredients: [
+      "2 lbs ground ostrich meat",
+      "1 cup breadcrumbs",
+      "1 egg",
+      "1/2 cup milk",
+      "1 small onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1/4 cup ketchup",
+      "1 tbsp Worcestershire sauce",
+      "1 tsp dried thyme",
+      "1 tsp dried oregano",
+      "Salt and pepper to taste",
+      "1/4 cup ketchup (for glaze)",
+      "2 tbsp brown sugar (for glaze)"
+    ],
+    instructions: [
+      "Preheat oven to 350°F (175°C). Grease a 9x5 inch loaf pan.",
+      "In a large bowl, combine ground ostrich, breadcrumbs, egg, milk, onion, garlic, ketchup, Worcestershire sauce, thyme, oregano, salt, and pepper. Mix until just combined.",
+      "Transfer mixture to the prepared loaf pan and shape into a loaf.",
+      "In a small bowl, mix ketchup and brown sugar for the glaze. Spread over the top of the meatloaf.",
+      "Bake for 1 hour, or until internal temperature reaches 160°F (71°C).",
+      "Let rest for 10 minutes before slicing and serving."
+    ]
+  },
+  {
+    id: 14,
+    name: "Ostrich Bolognese Pasta",
+    description: "Rich and hearty pasta sauce made with ground ostrich, simmered with tomatoes and herbs for a classic Italian dish.",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+    prepTime: "15 min",
+    cookTime: "45 min",
+    servings: 4,
+    difficulty: "Medium",
+    cuts: ["Ground"],
+    ingredients: [
+      "1 lb ground ostrich meat",
+      "1 lb spaghetti or fettuccine",
+      "2 tbsp olive oil",
+      "1 onion, finely chopped",
+      "2 carrots, finely chopped",
+      "2 celery stalks, finely chopped",
+      "3 cloves garlic, minced",
+      "1/4 cup tomato paste",
+      "1 (28 oz) can crushed tomatoes",
+      "1/2 cup red wine",
+      "1 tsp dried oregano",
+      "1 tsp dried basil",
+      "1/2 tsp red pepper flakes",
+      "Salt and pepper to taste",
+      "1/2 cup grated Parmesan cheese",
+      "Fresh basil leaves for garnish"
+    ],
+    instructions: [
+      "Bring a large pot of salted water to boil for pasta.",
+      "In a large skillet, heat olive oil over medium heat. Add onion, carrots, and celery. Cook for 5-7 minutes until softened.",
+      "Add garlic and cook for 1 minute until fragrant.",
+      "Add ground ostrich and cook, breaking it up with a spoon, until browned (about 5 minutes).",
+      "Stir in tomato paste and cook for 1 minute.",
+      "Add crushed tomatoes, red wine, oregano, basil, red pepper flakes, salt, and pepper. Bring to a simmer.",
+      "Reduce heat to low and simmer for 30-40 minutes, stirring occasionally, until sauce thickens.",
+      "Meanwhile, cook pasta according to package directions until al dente. Drain, reserving 1/2 cup pasta water.",
+      "Add cooked pasta to the sauce along with Parmesan cheese. Toss to combine, adding pasta water if needed to loosen the sauce.",
+      "Serve hot with additional Parmesan cheese and fresh basil leaves."
+    ]
   }
 ];
