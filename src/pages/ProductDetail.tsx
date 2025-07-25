@@ -172,21 +172,7 @@ const ProductDetail = () => {
               </span>
               <p className="text-lg text-muted-foreground mt-2">{product.description}</p>
             </div>
-            <Card className="vintage-container mb-8">
-              <CardHeader>
-                <CardTitle className="vintage-subtitle">Features</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  {product.features.map((feature, index) => (
-                    <li key={index} className="flex items-center">
-                      <span className="w-2 h-2 bg-accent rounded-full mr-3"></span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+
             <Card className="vintage-container">
               <CardHeader>
                 <CardTitle className="vintage-subtitle">Recipe Ideas</CardTitle>
