@@ -77,6 +77,13 @@ const RecipeDetail = () => {
             <div>
               <h1 className="vintage-title mb-4">{recipe.name}</h1>
               <p className="text-lg text-muted-foreground">{recipe.description}</p>
+              <div className="flex flex-wrap gap-2 mt-3">
+                {recipe.cuts.map((cut, index) => (
+                  <span key={index} className="inline-block bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold tracking-wide">
+                    {cut}
+                  </span>
+                ))}
+              </div>
             </div>
             <Card className="vintage-container mb-8">
               <CardHeader>

@@ -8,6 +8,7 @@ export const recipes = [
     cookTime: "20 min",
     servings: 2,
     difficulty: "Easy",
+    cuts: ["Oyster Steak"],
     ingredients: [
       "2 oyster steak (6-8 oz)",
       "2 tbsp butter",
@@ -32,6 +33,7 @@ export const recipes = [
     cookTime: "15 min",
     servings: 4,
     difficulty: "Easy",
+    cuts: ["Fajitas Strips", "Outside Strip"],
     ingredients: [
       "1 lb fajitas strips",
       "2 tbsp olive oil",
@@ -64,6 +66,7 @@ export const recipes = [
     cookTime: "25 min",
     servings: 6,
     difficulty: "Easy",
+    cuts: ["Ground"],
     ingredients: [
       "2 lbs ground ostrich meat",
       "1 cup breadcrumbs",
@@ -92,6 +95,7 @@ export const recipes = [
     cookTime: "2.5-3 hr",
     servings: 3,
     difficulty: "Medium",
+    cuts: ["Neck"],
     ingredients: [
       "1-1.5 pounds ostrich necks (1 pkg)",
       "1 tbsp olive oil",
@@ -133,6 +137,7 @@ export const recipes = [
     cookTime: "10 min",
     servings: 4,
     difficulty: "Easy",
+    cuts: ["Ground"],
     ingredients: [
       "1 lb ground ostrich meat",
       "1/4 cup breadcrumbs",
@@ -161,6 +166,7 @@ export const recipes = [
     cookTime: "45 min",
     servings: 4,
     difficulty: "Medium",
+    cuts: ["Wings"],
     ingredients: [
       "2 lbs ostrich wings",
       "2 tbsp olive oil",
@@ -192,6 +198,7 @@ export const recipes = [
     cookTime: "10 min",
     servings: 4,
     difficulty: "Medium",
+    cuts: ["Heart"],
     ingredients: [
       "1 lb ostrich heart, cleaned and cut into 1-inch cubes",
       "2 tbsp olive oil",
@@ -218,6 +225,7 @@ export const recipes = [
     cookTime: "15 min",
     servings: 2,
     difficulty: "Easy",
+    cuts: ["Liver"],
     ingredients: [
       "1/2 lb ostrich liver, sliced",
       "1 large onion, thinly sliced",
@@ -242,6 +250,7 @@ export const recipes = [
     cookTime: "30 min",
     servings: 4,
     difficulty: "Medium",
+    cuts: ["Tenderloin"],
     ingredients: [
       "1 to 1.5 lb whole ostrich tenderloin",
       "2 tbsp olive oil",
@@ -269,6 +278,7 @@ export const recipes = [
     cookTime: "8 min",
     servings: 2,
     difficulty: "Easy",
+    cuts: ["Fan Fillet"],
     ingredients: [
       "2 ostrich fan fillets (about 5 oz each)",
       "Salt and pepper to taste",
@@ -292,6 +302,7 @@ export const recipes = [
     cookTime: "15 min",
     servings: 2,
     difficulty: "Medium",
+    cuts: ["Inside Strip"],
     ingredients: [
       "2 ostrich medallions (about 4 oz each)",
       "1 tbsp black peppercorns, crushed",
@@ -317,6 +328,7 @@ export const recipes = [
     cookTime: "10 min",
     servings: 3,
     difficulty: "Easy",
+    cuts: ["Outside Strip"],
     ingredients: [
       "1 lb ostrich steak strips",
       "2 tbsp soy sauce",

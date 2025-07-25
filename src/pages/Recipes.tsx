@@ -3,8 +3,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Clock, Users, ChefHat } from "lucide-react";
 import { Link } from "react-router-dom";
 import { recipes } from "@/data/recipes";
+import React from "react";
 
 const Recipes = () => {
+  // Extract unique cuts from all recipes
+  const allCuts = recipes.flatMap(recipe => recipe.cuts);
+  const cuts = Array.from(new Set(allCuts));
+  const [selectedCut, setSelectedCut] = React.useState<string | null>(null);
+
+  // Filter recipes by selected cut
+  const filteredRecipes = selectedCut ? recipes.filter(recipe => recipe.cuts.includes(selectedCut)) : recipes;
 
   return (
     <div className="min-h-screen bg-background">
@@ -15,6 +23,26 @@ const Recipes = () => {
             Discover delicious ways to prepare ostrich meat and eggs. Our family recipes 
             have been perfected over generations of farming.
           </p>
+          {/* Cuts filter buttons */}
+          <div className="flex justify-center mt-6 mb-8">
+            <div className="flex space-x-2 bg-card p-2 rounded-lg border border-primary/20 overflow-x-auto">
+              <button
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${!selectedCut ? 'bg-primary text-primary-foreground' : 'hover:bg-muted text-muted-foreground'}`}
+                onClick={() => setSelectedCut(null)}
+              >
+                All
+              </button>
+              {cuts.map((cut) => (
+                <button
+                  key={cut}
+                  className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${selectedCut === cut ? 'bg-primary text-primary-foreground' : 'hover:bg-muted text-muted-foreground'}`}
+                  onClick={() => setSelectedCut(cut)}
+                >
+                  {cut}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Cooking Tips at the top */}
@@ -53,7 +81,7 @@ const Recipes = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {recipes.map((recipe) => (
+          {filteredRecipes.map((recipe) => (
             <Link key={recipe.id} to={`/recipe/${recipe.id}`}>
               <Card className="vintage-container hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer h-full">
                 <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">
@@ -66,6 +94,13 @@ const Recipes = () => {
                 <CardHeader className="pb-2">
                   <CardTitle className="vintage-subtitle text-lg">{recipe.name}</CardTitle>
                   <CardDescription className="text-sm">{recipe.description}</CardDescription>
+                  <div className="flex flex-wrap gap-1 mt-2">
+                    {recipe.cuts.map((cut, index) => (
+                      <span key={index} className="inline-block bg-primary text-primary-foreground px-2 py-1 rounded-full text-xs font-semibold tracking-wide">
+                        {cut}
+                      </span>
+                    ))}
+                  </div>
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center justify-between text-xs text-muted-foreground">

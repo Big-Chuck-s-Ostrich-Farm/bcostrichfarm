@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { recipes } from "@/data/recipes";
 
 // Copy of the products array from Products.tsx
 const products = [
@@ -110,21 +111,6 @@ const highlights = [
   "Free from preservatives, fillers, and hormones"
 ];
 
-const recipeIdeas = [
-  {
-    title: "Ostrich Carpaccio",
-    description: "A light, fresh, zero-carb plate that can be served as an impressive appetizer or a light meal."
-  },
-  {
-    title: "Fan Fajitas",
-    description: "Marinate and grill for outstanding tenderness and flavor retention."
-  },
-  {
-    title: "Bacon & Herb Wrapped Ostrich Fan",
-    description: "Wrapped in bacon and aromatic herbs, perfect for special occasions."
-  }
-];
-
 const ProductDetail = () => {
   const { id } = useParams();
   const product = products.find((p) => p.id === Number(id));
@@ -139,6 +125,14 @@ const ProductDetail = () => {
       </div>
     );
   }
+
+  // Filter recipes that use this product's cuts
+  const relatedRecipes = recipes.filter(recipe => 
+    recipe.cuts.some(cut => 
+      product.name.toLowerCase().includes(cut.toLowerCase()) || 
+      cut.toLowerCase().includes(product.name.toLowerCase())
+    )
+  );
 
   return (
     <div className="min-h-screen bg-background">
@@ -198,13 +192,36 @@ const ProductDetail = () => {
                 <CardTitle className="vintage-subtitle">Recipe Ideas</CardTitle>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2">
-                  {recipeIdeas.map((r, i) => (
-                    <li key={i} className="bg-muted rounded-lg p-3 shadow-sm">
-                      <span className="font-semibold text-primary">{r.title}:</span> {r.description}
-                    </li>
-                  ))}
-                </ul>
+                {relatedRecipes.length > 0 ? (
+                  <div className="space-y-3">
+                    {relatedRecipes.map((recipe) => (
+                      <Link key={recipe.id} to={`/recipe/${recipe.id}`} className="block">
+                        <div className="bg-muted rounded-lg p-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+                          <div className="flex items-center justify-between">
+                            <div>
+                              <h4 className="font-semibold text-primary">{recipe.name}</h4>
+                              <p className="text-sm text-muted-foreground mt-1">{recipe.description}</p>
+                              <div className="flex items-center gap-4 mt-2 text-xs text-muted-foreground">
+                                <span>Prep: {recipe.prepTime}</span>
+                                <span>Cook: {recipe.cookTime}</span>
+                                <span>Difficulty: {recipe.difficulty}</span>
+                              </div>
+                            </div>
+                            <div className="flex flex-wrap gap-1">
+                              {recipe.cuts.map((cut, index) => (
+                                <span key={index} className="inline-block bg-primary text-primary-foreground px-2 py-1 rounded-full text-xs font-semibold tracking-wide">
+                                  {cut}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-muted-foreground">No specific recipes found for this cut. Check our recipes page for general ostrich cooking ideas!</p>
+                )}
               </CardContent>
             </Card>
           </div>
