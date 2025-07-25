@@ -1,6 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   const products = [
@@ -141,33 +142,35 @@ const Products = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProducts.map((product) => (
-            <Card key={product.id} className="vintage-container hover:shadow-lg transition-shadow">
-              <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">
-                <img 
-                  src={product.image} 
-                  alt={product.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle className="vintage-subtitle text-xl">{product.name}</CardTitle>
-                <CardDescription className="text-accent font-medium">{product.category}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">{product.description}</p>
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-primary">Features:</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    {product.features.map((feature, index) => (
-                      <li key={index} className="flex items-center">
-                        <span className="w-2 h-2 bg-accent rounded-full mr-3"></span>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
+            <Link to={`/products/${product.id}`} key={product.id} style={{ textDecoration: 'none' }}>
+              <Card className="vintage-container hover:shadow-lg transition-shadow">
+                <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">
+                  <img 
+                    src={product.image} 
+                    alt={product.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-              </CardContent>
-            </Card>
+                <CardHeader>
+                  <CardTitle className="vintage-subtitle text-xl">{product.name}</CardTitle>
+                  <CardDescription className="text-accent font-medium">{product.category}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">{product.description}</p>
+                  <div className="space-y-2">
+                    <h4 className="font-semibold text-primary">Features:</h4>
+                    <ul className="text-sm text-muted-foreground space-y-1">
+                      {product.features.map((feature, index) => (
+                        <li key={index} className="flex items-center">
+                          <span className="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
       </div>

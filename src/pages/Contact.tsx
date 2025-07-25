@@ -21,7 +21,7 @@ const Contact = () => {
                 <MapPin className="w-6 h-6 mr-2 text-accent" />
                 Farmers Market
               </CardTitle>
-              <CardContent className="space-y-4"></CardContent>
+              <CardContent className="space-y-2"></CardContent>
               <div className="mt-8 mb-0">
                 <h4 className="font-semibold text-primary text-lg">Japan Town Farmers' Market</h4>
                 <p className="text-muted-foreground text-base font-semibold">Every Sunday, 9:00 AM - 12:00 PM</p>
@@ -31,7 +31,7 @@ const Contact = () => {
             <CardContent className="space-y-4">
               <div>
                 <h4 className="font-semibold text-primary mb-2 ">What We Bring</h4>
-                <ul className="text-muted-foreground text-base space-y-1 mb-2">
+                <ul className="text-muted-foreground text-base space-y-1">
                   <li>• Frozen vacuum sealed ostrich meat</li>
                 </ul>
               </div>
